@@ -22,7 +22,7 @@
 <meta name="twitter:image" content="https://myubasic.com/assets/brand/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Rubik:wght@800&family=M+PLUS+Rounded+1c:wght@800&family=Inter:wght@300;500&family=Klee+One:wght@600&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Rubik:wght@800&family=M+PLUS+Rounded+1c:wght@800&family=Klee+One:wght@600&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
   * { box-sizing:border-box; margin:0; padding:0; }
   :root {
@@ -32,7 +32,7 @@
   }
   html { background:var(--desk); -webkit-text-size-adjust:100%; text-size-adjust:100%; overflow-x:clip; scroll-behavior:smooth; scroll-padding-top:12px; }
   body { font-family:'Zen Kaku Gothic New',"Hiragino Sans",sans-serif; font-weight:500; color:var(--text); background:var(--desk);
-         -webkit-font-smoothing:antialiased; line-break:strict; word-break:auto-phrase; font-size:16px; font-feature-settings:"palt" 0; }
+         -webkit-font-smoothing:antialiased; line-break:strict; word-break:keep-all; overflow-wrap:anywhere; font-size:16px; font-feature-settings:"palt" 0; }
   .ic, br.pc, br.sp { display:none; }
 
   /* ---------- 紙 ---------- */
@@ -153,8 +153,8 @@
 
   /* ---------- もくじへ ---------- */
   .to-toc { position:fixed; right:16px; bottom:18px; z-index:10; display:flex; align-items:center; gap:8px; padding:10px 16px 10px 14px;
-            border-radius:999px; background:rgba(38,38,38,0.88); color:#fff; font-size:12px; letter-spacing:0.12em; text-decoration:none;
-            -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); box-shadow:0 6px 16px rgba(0,0,0,0.18); }
+            border-radius:999px; background:#2E2E2E; color:#fff; font-size:12px; letter-spacing:0.12em; text-decoration:none;
+            box-shadow:0 6px 16px rgba(0,0,0,0.18); }
   .to-toc::before { content:""; width:10px; height:8px; border-top:1px solid #fff; border-bottom:1px solid #fff;
                     background:linear-gradient(#fff,#fff) 0 50% / 100% 1px no-repeat; }
 
@@ -216,7 +216,7 @@
   .close-with { display:table; margin:18px auto 0; padding:8px 20px; border:1.5px solid var(--c); border-radius:999px;
                 font-weight:700; font-size:13.5px; letter-spacing:0.08em; }
 
-  .close-btn { display:table; margin:30px auto 0; padding:13.5px 41.5px; border:0; background:#F6F6C2 url("assets/product/btn_paper.png") center / cover; border-radius:999px; box-shadow:0 4px 0 #DCDA9E, 0 10px 16px -4px rgba(103,100,94,0.22);
+  .close-btn { display:table; margin:30px auto 0; padding:13.5px 41.5px; border:0; background:#F6F6C2 url("assets/product/btn_paper.jpg") center / cover; border-radius:999px; box-shadow:0 4px 0 #DCDA9E, 0 10px 16px -4px rgba(103,100,94,0.22);
                color:var(--c); text-decoration:none; font-weight:700; font-size:14.5px; letter-spacing:0.1em; }
 
   .close-hand { margin-top:52px; font-size:14px; line-height:2; letter-spacing:0.08em; }
@@ -224,7 +224,7 @@
   .close-sgw { position:absolute; left:0; top:0; width:520px; height:276px; transform:scale(var(--s)); transform-origin:0 0; }
   .close-sg { position:absolute; left:0; top:98px; width:530px; height:198px; overflow:hidden; filter:grayscale(1); }
   .close-sg img { position:absolute; left:-261px; top:-162px; width:1014px; max-width:none; transform:rotate(-7deg); filter:contrast(1.3) brightness(1.06); }
-  .close-pen { position:absolute; left:397px; top:-38px; width:188px; height:212px; filter:drop-shadow(3px 7px 6px rgba(103,100,94,0.18)); }
+  .close-pen { position:absolute; left:397px; top:-38px; width:188px; height:212px; }
 
   @media (max-width:640px){
     .close { margin-top:56px; padding-top:72px; --s:0.24; }
@@ -274,906 +274,906 @@
 </svg>
 <div class="wrap">
 
-  <h1>購入前の本音とQ&amp;A<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></h1>
+  <h1>購入前の<wbr>本音と<wbr>Q&amp;A<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></h1>
 
-  <p class="lead qa-intro">いただいたご質問や購入前の本音、ご相談をもとにまとめました。</p>
-  <p class="lead">私自身もこの分野で人生が変わった一人として、もっと本音で伝える必要があり、このページを急遽作りました。ぜひご購入を迷われている方に見ていただきたいです。</p>
+  <p class="lead qa-intro">いただいた<wbr>ご質問や<wbr>購入前の<wbr>本音、<wbr>ご相談を<wbr>もとに<wbr>まとめました。</p>
+  <p class="lead">私自身も<wbr>この<wbr>分野で<wbr>人生が<wbr>変わった<wbr>一人と<wbr>して、<wbr>もっと<wbr>本音で<wbr>伝える<wbr>必要が<wbr>あり、<wbr>この<wbr>ページを<wbr>急遽作りました。<wbr>ぜひ<wbr>ご購入を<wbr>迷われている<wbr>方に<wbr>見ていただきたいです。</p>
 
   <ol class="qa-toc" id="toc">
-    <li><a href="#s1">興味はあるけど、まだ決めかねています🤣<span class="excl">！</span></a></li>
-    <li><a href="#s2">私にもできるのかな</a></li>
-    <li><a href="#s3">AI時代に対する本音</a></li>
-    <li><a href="#s4">楽しむことに遠慮してしまう</a></li>
-    <li><a href="#s5">見せること、表現すること</a></li>
-    <li><a href="#s6">言葉にしにくい気持ちへのお返事</a></li>
-    <li><a href="#s7">続け方と内容のこと</a></li>
-    <li><a href="#s8">この分野とお仕事のこと</a></li>
-    <li><a href="#s9">ほかとの違い</a></li>
-    <li><a href="#s10">購入前に知っておきたいこと</a></li>
-    <li><a href="#s11">購入を決める前に</a></li>
+    <li><a href="#s1">興味は<wbr>あるけど、<wbr>まだ<wbr>決めかねています🤣<span class="excl">！</span></a></li>
+    <li><a href="#s2">私にも<wbr>できるのかな</a></li>
+    <li><a href="#s3">AI時代に<wbr>対する<wbr>本音</a></li>
+    <li><a href="#s4">楽しむことに<wbr>遠慮してしまう</a></li>
+    <li><a href="#s5">見せる<wbr>こと、<wbr>表現する<wbr>こと</a></li>
+    <li><a href="#s6">言葉に<wbr>しにくい気持ちへの<wbr>お返事</a></li>
+    <li><a href="#s7">続け方と<wbr>内容の<wbr>こと</a></li>
+    <li><a href="#s8">この<wbr>分野とお仕事の<wbr>こと</a></li>
+    <li><a href="#s9">ほかとの<wbr>違い</a></li>
+    <li><a href="#s10">購入前に<wbr>知って<wbr>おきたい<wbr>こと</a></li>
+    <li><a href="#s11">購入を<wbr>決める<wbr>前に</a></li>
   </ol>
-  <p class="toc-note">読みたいところを押すと、そこから読めます</p>
+  <p class="toc-note">読みたい<wbr>ところを<wbr>押すと、<wbr>そこから<wbr>読めます</p>
 
-  <h2 class="sect" id="s1">興味はあるけど、<br class="sp">まだ決めかねています🤣<span class="excl">！</span></h2>
+  <h2 class="sect" id="s1">興味は<wbr>あるけど、<br class="sp">まだ<wbr>決めかねています🤣<span class="excl">！</span></h2>
   <div class="intro-frame s1-frame">
-  <ul class="honne s1-honne"><li>「3日間で決められません」</li><li>「発表されてから、ものすごく悩んでいます」</li></ul>
-  <p class="qa-q s1-a"><b>A</b><span>わかります🤣<br class="sp">ご案内期間が短くてすみません💡</span></p>
-  <p class="lead s1-cont"><span>ただ補足すると・・3日間限定でご案内している特別動画付きの商品ページを何回かお送りしています。</span></p>
-  <p class="lead qa-feature s1-cont"><span>一番最後にお送りしたサイトから、サイトの日より3日間です。その期間内であれば特別価格でご購入いただけます。</span></p>
+  <ul class="honne s1-honne"><li>「3日間で<wbr>決められません」</li><li>「発表されてから、<wbr>もの<wbr>すごく<wbr>悩んでいます」</li></ul>
+  <p class="qa-q s1-a"><b>A</b><span>わかります🤣<br class="sp">ご案内期間が<wbr>短くて<wbr>すみません💡</span></p>
+  <p class="lead s1-cont"><span>ただ補足すると・・<wbr>3日間限定で<wbr>ご案内している<wbr>特別動画付きの<wbr>商品ページを<wbr>何回か<wbr>お送りしています。</span></p>
+  <p class="lead qa-feature s1-cont"><span>一番<wbr>最後に<wbr>お送りした<wbr>サイトから、<wbr>サイトの<wbr>日より<wbr>3日間です。<wbr>その<wbr>期間内で<wbr>あれば<wbr>特別価格で<wbr>ご購入いただけます。</span></p>
   <div class="qa-msg">
-    <p class="sect qa-ans">今回のご案内について改めてお伝えします</p>
-    <p class="lead">私がお仕事につなげた経験を今回の商品にまとめています。</p>
-    <p class="lead dashed">実際のお仕事のやり取り</p>
-    <p class="lead dashed">どのAI画像や動画がお仕事につながるのか</p>
-    <p class="lead">それなりに失敗や経験を経てまとめたものですので、まとめている具体的な内容については以降、どの場所でご質問いただいてもお答えしないと決めています。</p>
-    <p class="lead">この商品の制作には、5ヶ月をかけました。普段はプロンプトをSNSで無料で公開している立場ですが、この分野については、AI時代に本気で学びたい方に絞ってお伝えしています。</p>
-    <p class="lead">これからChatGPTを使ったことがある方と同じぐらい、画像生成をしたことがある方が増えてきます。それに伴いAIで画像や動画を作れること、そして、今回ご案内しているその先の分野が注目され始めます。</p>
-    <p class="lead">この分野の魅力をこれから私自身も発信していきます。</p>
-    <p class="lead">商品については、どこかで見聞きした情報ではありません。その分野に先駆けてチャレンジし、これから始める方や、まずは知りたい方へ向けてまとめたものです。<br>ChatGPTに質問しても基本的に返ってきません。</p>
+    <p class="sect qa-ans">今回の<wbr>ご案内に<wbr>ついて<wbr>改めて<wbr>お伝えします</p>
+    <p class="lead">私が<wbr>お仕事に<wbr>つなげた<wbr>経験を<wbr>今回の<wbr>商品に<wbr>まとめています。</p>
+    <p class="lead dashed">実際の<wbr>お仕事の<wbr>やり取り</p>
+    <p class="lead dashed">どの<wbr>AI画像や<wbr>動画が<wbr>お仕事に<wbr>つながるのか</p>
+    <p class="lead">それなりに<wbr>失敗や<wbr>経験を<wbr>経て<wbr>まとめた<wbr>ものですので、<wbr>まとめている<wbr>具体的な<wbr>内容に<wbr>ついては<wbr>以降、<wbr>どの<wbr>場所で<wbr>ご質問いただいても<wbr>お答えしないと<wbr>決めています。</p>
+    <p class="lead">この<wbr>商品の<wbr>制作には、<wbr>5ヶ月を<wbr>かけました。<wbr>普段は<wbr>プロンプトを<wbr>SNSで<wbr>無料で<wbr>公開している<wbr>立場ですが、<wbr>この<wbr>分野に<wbr>ついては、<wbr>AI時代に<wbr>本気で<wbr>学びたい方に<wbr>絞ってお伝えしています。</p>
+    <p class="lead">これから<wbr>ChatGPTを<wbr>使った<wbr>ことがある方と<wbr>同じ<wbr>ぐらい、<wbr>画像生成を<wbr>したことがある方が<wbr>増えてきます。<wbr>それに<wbr>伴い<wbr>AIで<wbr>画像や<wbr>動画を<wbr>作れる<wbr>こと、<wbr>そして、<wbr>今回ご案内している<wbr>その先の<wbr>分野が<wbr>注目され<wbr>始めます。</p>
+    <p class="lead">この<wbr>分野の<wbr>魅力を<wbr>これから<wbr>私自身も<wbr>発信していきます。</p>
+    <p class="lead">商品に<wbr>ついては、<wbr>どこかで<wbr>見聞きした<wbr>情報では<wbr>ありません。<wbr>その<wbr>分野に<wbr>先駆けて<wbr>チャレンジし、<wbr>これから<wbr>始める<wbr>方や、<wbr>まずは<wbr>知りたい方<wbr>へ<wbr>向けて<wbr>まとめた<wbr>ものです。<br>ChatGPTに<wbr>質問しても<wbr>基本的に<wbr>返ってきません。</p>
   </div>
   </div>
   <div class="intro-frame">
-  <p class="sect qa-ans sect-band">購入前の本音とQ&amp;A</p>
-  <p class="lead qa-lead">いただいたご質問やご相談に、このページでは本音ベースで回答していきますね。</p>
+  <p class="sect qa-ans sect-band">購入前の<wbr>本音と<wbr>Q&amp;A</p>
+  <p class="lead qa-lead">いただいた<wbr>ご質問や<wbr>ご相談に、<wbr>この<wbr>ページでは<wbr>本音ベースで<wbr>回答していきますね。</p>
   <ul class="honne honne-talk">
-    <li>「やりたいことはまだ決まってないよ」</li>
-    <li>「AIはちょっと気になるんだけど」<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></li>
+    <li>「やりたい<wbr>ことは<wbr>まだ<wbr>決まってないよ」</li>
+    <li>「AIは<wbr>ちょっと<wbr>気に<wbr>なるんだけど」<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></li>
   </ul>
   </div>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>どんな方に向いている内容ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>AI画像や動画に興味があり、その先の仕事の可能性も知ってみたい方に向けています。<br>今すぐ仕事にすると決めていなくても大丈夫です。ただ、画像をつくる方法だけをまとめた商品ではありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>どんな<wbr>方に<wbr>向いている<wbr>内容ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AI画像や<wbr>動画に<wbr>興味が<wbr>あり、<wbr>その先の<wbr>仕事の<wbr>可能性も<wbr>知ってみたい方に<wbr>向けています。<br>今すぐ<wbr>仕事に<wbr>すると<wbr>決めていなくても<wbr>大丈夫です。<wbr>ただ、<wbr>画像を<wbr>つくる<wbr>方<wbr>法だけを<wbr>まとめた<wbr>商品では<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>まだ何をしたいのか決まっていません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から決めなくても大丈夫です。興味を持ったところから、この分野の魅力を知った上で、その先をゆっくり考えていただけたら嬉しいです。<br>そう思っていただくために制作した商品でもあります。</span></p>
+      <p class="qa-q"><b>Q</b><span>まだ<wbr>何を<wbr>したいのか決まっていません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>決めなくても<wbr>大丈夫です。<wbr>興味を<wbr>持った<wbr>ところから、<wbr>この<wbr>分野の<wbr>魅力を<wbr>知った<wbr>上で、<wbr>その<wbr>先を<wbr>ゆっくり考えていただけたら<wbr>嬉しいです。<br>そう<wbr>思っていただく<wbr>ために<wbr>制作した<wbr>商品でもあります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>画像を作るのが楽しいという状態から始めてもいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>もちろんです。今回お伝えしたいのは、その先にお仕事として関わる分野もあるということ。<br>まずは知るところからでいいと思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>画像を<wbr>作るのが<wbr>楽しいと<wbr>いう<wbr>状態から<wbr>始めても<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。<wbr>今回お伝えしたいのは、<wbr>その先に<wbr>お仕事と<wbr>して<wbr>関わる<wbr>分野も<wbr>あると<wbr>いう<wbr>こと。<br>まずは<wbr>知る<wbr>ところからで<wbr>いいと<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>仕事にするかどうか、今決めなくてもいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>はい。まだこの分野は始まったばかりだと思っているので、始める時はもちろん、仕事にしたいと思った時にも戻ってこれる商品になっています。</span></p>
+      <p class="qa-q"><b>Q</b><span>仕事に<wbr>するか<wbr>どうか、<wbr>今決めなくても<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。<wbr>まだ<wbr>この<wbr>分野は<wbr>始まったばかりだと<wbr>思っているので、<wbr>始める<wbr>時は<wbr>もちろん、<wbr>仕事に<wbr>したいと<wbr>思った<wbr>時にも<wbr>戻って<wbr>これる<wbr>商品に<wbr>なっています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>今の仕事を続けながらでもいいのでしょうか？</span></p>
-      <p class="qa-a"><b>A</b><span>もちろんです。今のお仕事を辞めることが前提ではありません。AI時代の選択肢の一つとして知っていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>今の<wbr>仕事を<wbr>続けながらでも<wbr>いいのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。<wbr>今の<wbr>お仕事を<wbr>辞める<wbr>ことが<wbr>前提では<wbr>ありません。<wbr>AI時代の<wbr>選択肢の<wbr>一つと<wbr>して<wbr>知っていただきたいです。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s2">私にもできるのかな</h2>
+  <h2 class="sect" id="s2">私にも<wbr>できるのかな</h2>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>センスに自信がありません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から自信がなくても大丈夫です。私自身も未経験から学んできました。まずは好きだなと思うものを大切にしていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>センスに<wbr>自信が<wbr>ありません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>自信が<wbr>なくても<wbr>大丈夫です。<wbr>私自身も<wbr>未経験から<wbr>学んできました。<wbr>まずは<wbr>好きだなと<wbr>思う<wbr>ものを<wbr>大切に<wbr>していただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>絵が描けなくてもいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>はい。AIを使った制作には、手で絵を描くこととは違う入り方もあります。まずは触れてみるところからで大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>絵が<wbr>描けなくても<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。<wbr>AIを<wbr>使った<wbr>制作には、<wbr>手で<wbr>絵を<wbr>描く<wbr>こととは<wbr>違う<wbr>入り方も<wbr>あります。<wbr>まずは<wbr>触れてみる<wbr>ところからで<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>デザインの勉強をしたことがありません。</span></p>
-      <p class="qa-a"><b>A</b><span>未経験の方にもこの分野を知っていただきたいと思ってまとめています。最初から専門的な経験がある必要はありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>デザインの<wbr>勉強を<wbr>したことがありません。</span></p>
+      <p class="qa-a"><b>A</b><span>未経験の<wbr>方にも<wbr>この<wbr>分野を<wbr>知っていただきたいと<wbr>思って<wbr>まとめています。<wbr>最初から<wbr>専門的な<wbr>経験が<wbr>ある<wbr>必要は<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>年齢が気になっています。</span></p>
-      <p class="qa-a"><b>A</b><span>年齢だけで興味を諦める必要はないと思います。自分のペースで学んでいただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>年齢が<wbr>気に<wbr>なっています。</span></p>
+      <p class="qa-a"><b>A</b><span>年齢だけで<wbr>興味を<wbr>諦める<wbr>必要は<wbr>ないと<wbr>思います。<wbr>自分の<wbr>ペースで<wbr>学んでいただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>今さら初心者になるのが、少し恥ずかしいです。</span></p>
-      <p class="qa-a"><b>A</b><span>その気持ち、よくわかります。何歳から始めても、最初は誰でも初心者だと思っています。<br>新しいことに挑戦している自分を、恥ずかしがらなくて大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>今さら<wbr>初心者に<wbr>なるのが、<wbr>少し<wbr>恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その<wbr>気持ち、<wbr>よく<wbr>わかります。<wbr>何歳から<wbr>始めても、<wbr>最初は<wbr>誰でも<wbr>初心者だと<wbr>思っています。<br>新しい<wbr>ことに<wbr>挑戦している<wbr>自分を、<wbr>恥ずかしがらなくて<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>AIと聞くだけで、少し身構えてしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>難しそう、冷たそうと感じる方もいると思います。私にとっては、スマホで写真を撮る感覚の延長でした。<br>まずは身近なところから触れていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>AIと<wbr>聞くだけで、<wbr>少し<wbr>身構えてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>難しそう、<wbr>冷たそうと<wbr>感じる<wbr>方も<wbr>いると<wbr>思います。<wbr>私に<wbr>とっては、<wbr>スマホで<wbr>写真を<wbr>撮る<wbr>感覚の<wbr>延長でした。<br>まずは<wbr>身近な<wbr>ところから<wbr>触れていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>なんだか難しそうです。</span></p>
-      <p class="qa-a"><b>A</b><span>最初はそう見えますよね。全部を一度に理解しなくても大丈夫です。わかるところから、ひとつずつ進めていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>なんだか<wbr>難しそうです。</span></p>
+      <p class="qa-a"><b>A</b><span>最初は<wbr>そう<wbr>見えますよね。<wbr>全部を<wbr>一度に<wbr>理解しなくても<wbr>大丈夫です。<wbr>わかる<wbr>ところから、<wbr>ひと<wbr>つずつ<wbr>進めて<wbr>いただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>アイデアがなかなか浮かびません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から何でも思いつく必要はありません。好きな色や雰囲気など、小さな好みから始めてもいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>アイデアが<wbr>なかなか<wbr>浮かびません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>何でも<wbr>思いつく<wbr>必要は<wbr>ありません。<wbr>好きな<wbr>色や<wbr>雰囲気など、<wbr>小さな<wbr>好みから<wbr>始めても<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分の感性を信じられません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から信じられる方は少ないと思います。いいなと思ったものを集めるうちに、自分の好みが見えてきます。<br>小さな「いいな」を大切にしてみてください。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分の<wbr>感性を<wbr>信じられません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>信じられる<wbr>方は<wbr>少ないと<wbr>思います。<wbr>いいなと<wbr>思った<wbr>ものを<wbr>集めるうちに、<wbr>自分の<wbr>好みが<wbr>見えてきます。<br>小さな<wbr>「いいな」を<wbr>大切に<wbr>してみてください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰かに「向いている」と言ってもらえたら安心なのですが。</span></p>
-      <p class="qa-a"><b>A</b><span>向いているかどうかは、最初から誰かが決められるものではないと思います。やってみて楽しいと感じるかを、大切にしていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰かに<wbr>「向いている」と<wbr>言って<wbr>もらえたら<wbr>安心なのですが。</span></p>
+      <p class="qa-a"><b>A</b><span>向いているか<wbr>どうかは、<wbr>最初から<wbr>誰かが<wbr>決められる<wbr>ものではないと<wbr>思います。<wbr>やってみて<wbr>楽しいと<wbr>感じるかを、<wbr>大切に<wbr>していただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>みゅうさんの作品はすごくて、私には遠く感じます。</span></p>
-      <p class="qa-a"><b>A</b><span>そう感じてくださるのも、よくわかります。私も未経験から始めました。今の作品やブランドとのお仕事は、そのあとに少しずつ積み重ねてきたものです。<br>皆さんに同じ道を歩いてほしいわけではありません。まずは、ご自身が興味を持てるかどうかを大切にしていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>みゅうさんの<wbr>作品は<wbr>すごくて、<wbr>私には<wbr>遠く<wbr>感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>そう<wbr>感じてくださるのも、<wbr>よく<wbr>わかります。<wbr>私も<wbr>未経験から<wbr>始めました。<wbr>今の<wbr>作品や<wbr>ブランドとの<wbr>お仕事は、<wbr>その<wbr>あとに<wbr>少しずつ積み重ねてきた<wbr>ものです。<br>皆さんに<wbr>同じ道を<wbr>歩いて<wbr>ほしいわけでは<wbr>ありません。<wbr>まずは、<wbr>ご自身が<wbr>興味を<wbr>持てるか<wbr>どうかを<wbr>大切に<wbr>していただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰かの作品を見るのは好き。でも、自分がつくる側になる想像ができません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初はそう感じることもあると思います。まずは小さな好みから試してみて、つくる楽しさを知っていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰かの<wbr>作品を<wbr>見るのは<wbr>好き。<wbr>でも、<wbr>自分が<wbr>つくる<wbr>側に<wbr>なる<wbr>想像が<wbr>できません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初は<wbr>そう<wbr>感じる<wbr>こともあると<wbr>思います。<wbr>まずは<wbr>小さな<wbr>好みから<wbr>試してみて、<wbr>つくる<wbr>楽しさを<wbr>知っていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>周りに同じことをしている人がいません。</span></p>
-      <p class="qa-a"><b>A</b><span>周りと同じことをしていなくても大丈夫です。自分が興味を持てるかを大切にしていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>周りに<wbr>同じ<wbr>ことを<wbr>している<wbr>人が<wbr>いません。</span></p>
+      <p class="qa-a"><b>A</b><span>周りと<wbr>同じ<wbr>ことを<wbr>していなくても<wbr>大丈夫です。<wbr>自分が<wbr>興味を<wbr>持てるかを<wbr>大切に<wbr>していただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>パソコンが苦手でも始められますか？</span></p>
-      <p class="qa-a"><b>A</b><span>無料から触れられる身近なツールもあります。ただし、実際の制作や仕事ではパソコンが必要になる作業もあるので、そこは正確にご案内したいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>パソコンが<wbr>苦手でも<wbr>始められますか？</span></p>
+      <p class="qa-a"><b>A</b><span>無料から<wbr>触れられる<wbr>身近な<wbr>ツールも<wbr>あります。<wbr>ただし、<wbr>実際の<wbr>制作や<wbr>仕事では<wbr>パソコンが<wbr>必要に<wbr>なる<wbr>作業も<wbr>あるので、<wbr>そこは<wbr>正確に<wbr>ご案内したいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>一度聞いただけで理解できる自信がありません。</span></p>
-      <p class="qa-a"><b>A</b><span>何度も見返しながら、ご自身のペースで進めていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>一度<wbr>聞いただけで<wbr>理解できる<wbr>自信が<wbr>ありません。</span></p>
+      <p class="qa-a"><b>A</b><span>何度も<wbr>見返しながら、<wbr>ご自身の<wbr>ペースで<wbr>進めて<wbr>いただけたらと<wbr>思います。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s3">AI時代に対する本音</h2>
+  <h2 class="sect" id="s3">AI時代に<wbr>対する<wbr>本音</h2>
   <ul class="honne">
-    <li>「今からAIを勉強しても、もう遅い気がする」</li>
-    <li>「効率化の話は、正直ピンとこない」</li>
-    <li>「誰でもつくれるなら、私じゃなくてもいいよね」</li>
-    <li>「AIがどこまで進むのか、ちょっと怖い」</li>
+    <li>「今から<wbr>AIを<wbr>勉強しても、<wbr>もう<wbr>遅い<wbr>気が<wbr>する」</li>
+    <li>「効率化の<wbr>話は、<wbr>正直ピンと<wbr>こない」</li>
+    <li>「誰でも<wbr>つくれる<wbr>なら、<wbr>私じゃなくても<wbr>いいよね」</li>
+    <li>「AIが<wbr>どこまで<wbr>進むのか、<wbr>ちょっと<wbr>怖い」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>今からAIを勉強しても、追いつける気がしません。</span></p>
-      <p class="qa-a"><b>A</b><span>私は2023年からChatGPTを使ってきました。男性的な効率化やお仕事術のようなAI活用は、正直、今から勉強しなくてもいいのかなと思っています。<br>AIがほとんどいろんなことをできるようになって、ようやく任せられるようになったからです。</span></p>
+      <p class="qa-q"><b>Q</b><span>今から<wbr>AIを<wbr>勉強しても、<wbr>追いつける<wbr>気が<wbr>しません。</span></p>
+      <p class="qa-a"><b>A</b><span>私は<wbr>2023年から<wbr>ChatGPTを<wbr>使ってきました。<wbr>男性的な<wbr>効率化や<wbr>お仕事術のような<wbr>AI活用は、<wbr>正直、<wbr>今から<wbr>勉強しなくても<wbr>いいのかなと<wbr>思っています。<br>AIが<wbr>ほとんど<wbr>いろんな<wbr>ことを<wbr>できるようになって、<wbr>ようやく<wbr>任せられるようになったからです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>AIでできることが多すぎて、ついていけません。</span></p>
-      <p class="qa-a"><b>A</b><span>AIでできることは、大きく分けると、効率化やお仕事術に使えたり、資料が作れたり、何でも聞けば答えてくれたりすることです。<br>最近だとMuseのようなAIエージェントが出てきて、身の回りのことを手伝ってくれるようにもなりました。<br>これらは私たちだけではなく、ほとんどの人が使える状態にあります。</span></p>
+      <p class="qa-q"><b>Q</b><span>AIで<wbr>できる<wbr>ことが<wbr>多すぎて、<wbr>ついていけません。</span></p>
+      <p class="qa-a"><b>A</b><span>AIで<wbr>できる<wbr>ことは、<wbr>大きく<wbr>分けると、<wbr>効率化や<wbr>お仕事術に<wbr>使えたり、<wbr>資料が<wbr>作れたり、<wbr>何でも<wbr>聞けば<wbr>答えてくれたりする<wbr>ことです。<br>最近だと<wbr>Museのような<wbr>AIエージェントが<wbr>出てきて、<wbr>身の<wbr>回りの<wbr>ことを<wbr>手伝ってくれるようにも<wbr>なりました。<br>これらは<wbr>私たちだけではなく、<wbr>ほとんどの<wbr>人が<wbr>使える<wbr>状態に<wbr>あります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰でもAIで画像をつくれるなら、私がやる意味はありますか？</span></p>
-      <p class="qa-a"><b>A</b><span>AIでできることの中に、画像や動画をつくることが増えました。昔はクオリティの高い画像は全然つくれませんでしたが、これからはほとんどの人がつくれるようになります。<br>AI時代はほとんどのことを調べられて、ChatGPTに聞くこともできます。だからこそ、実際に体験したことや原体験のようなものが残っていくと思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰でも<wbr>AIで<wbr>画像を<wbr>つくれる<wbr>なら、<wbr>私が<wbr>やる<wbr>意味は<wbr>ありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>AIで<wbr>できる<wbr>ことの<wbr>中に、<wbr>画像や<wbr>動画を<wbr>つくる<wbr>ことが<wbr>増えました。<wbr>昔は<wbr>クオリティの<wbr>高い<wbr>画像は<wbr>全然つくれませんでしたが、<wbr>これからは<wbr>ほとんどの<wbr>人が<wbr>つくれるようになります。<br>AI時代は<wbr>ほとんどの<wbr>ことを<wbr>調べられて、<wbr>ChatGPTに<wbr>聞く<wbr>ことも<wbr>できます。<wbr>だから<wbr>こそ、<wbr>実際に<wbr>体験した<wbr>ことや原体験のような<wbr>ものが<wbr>残っていくと<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>AI画像をお仕事にするのは、ハードルが高く感じます。</span></p>
-      <p class="qa-a"><b>A</b><span>お仕事にすると聞くと、ハードルを感じるかもしれません。でも、やることは基本的に変わりません。<br>テキストで伝えたり、本商品で紹介しているより詳しく伝える方法を使ったりして、作品をつくっていきます。</span></p>
+      <p class="qa-q"><b>Q</b><span>AI画像を<wbr>お仕事に<wbr>するのは、<wbr>ハードルが<wbr>高く<wbr>感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>お仕事に<wbr>すると<wbr>聞くと、<wbr>ハードルを<wbr>感じるかもしれません。<wbr>でも、<wbr>やる<wbr>ことは<wbr>基本的に<wbr>変わりません。<br>テキストで<wbr>伝えたり、<wbr>本商品で<wbr>紹介しているより<wbr>詳しく<wbr>伝える<wbr>方<wbr>法を<wbr>使ったりして、<wbr>作品を<wbr>つくっていきます。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>顔や声を出さないと、お仕事にはならないのでしょうか？</span></p>
-      <p class="qa-a"><b>A</b><span>私がこれまでお仕事をしてきた中で、ご連絡をいただいた方の9割は女性でした。顔や声を出さなくても、作品を見た方からお仕事のご連絡が来ています。<br>ただ、これは私の一つの例です。これから何十通りもあると思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>顔や<wbr>声を<wbr>出さないと、<wbr>お仕事には<wbr>ならないのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>私が<wbr>これまで<wbr>お仕事を<wbr>してきた<wbr>中で、<wbr>ご連絡を<wbr>いただいた方の<wbr>9割は<wbr>女性でした。<wbr>顔や<wbr>声を<wbr>出さなくても、<wbr>作品を<wbr>見た<wbr>方から<wbr>お仕事の<wbr>ご連絡が<wbr>来ています。<br>ただ、<wbr>これは<wbr>私の<wbr>一つの<wbr>例です。<wbr>これから<wbr>何十通りも<wbr>あると<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>興味はあっても、お仕事までの距離が遠く感じます。</span></p>
-      <p class="qa-a"><b>A</b><span>その距離は、その先の世界を知ることだと思っています。知ったうえで、自分がその先どうしていきたいかを考えていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>興味は<wbr>あっても、<wbr>お仕事までの<wbr>距離が<wbr>遠く<wbr>感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>その<wbr>距離は、<wbr>その先の<wbr>世界を<wbr>知る<wbr>ことだと<wbr>思っています。<wbr>知ったうえで、<wbr>自分が<wbr>その<wbr>先どうしていきたいかを<wbr>考えていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>周りに置いていかれそうで、焦ります。</span></p>
-      <p class="qa-a"><b>A</b><span>AIの変化は速いので、焦る気持ちもわかります。全部を追いかけなくても大丈夫です。<br>興味を持てる分野をひとつ知っておくだけでも、違うと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>周りに<wbr>置いていかれそうで、<wbr>焦ります。</span></p>
+      <p class="qa-a"><b>A</b><span>AIの<wbr>変化は<wbr>速いので、<wbr>焦る<wbr>気持ちも<wbr>わかります。<wbr>全部を<wbr>追い<wbr>かけなくても<wbr>大丈夫です。<br>興味を<wbr>持てる<wbr>分野を<wbr>ひとつ<wbr>知っておくだけでも、<wbr>違うと<wbr>思います。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s4">楽しむことに遠慮してしまう</h2>
+  <h2 class="sect" id="s4">楽しむことに<wbr>遠慮してしまう</h2>
   <ul class="honne">
-    <li>「役に立たないことに時間を使うのは、ちょっと」</li>
-    <li>「家のことが終わってからじゃないと」</li>
-    <li>「楽しむだけなんて、ちょっと後ろめたい」</li>
-    <li>「楽しんでる自分を見られるのは照れる」</li>
+    <li>「役に<wbr>立たない<wbr>ことに<wbr>時間を<wbr>使うのは、<wbr>ちょっと」</li>
+    <li>「家の<wbr>ことが<wbr>終わってからじゃないと」</li>
+    <li>「楽しむだけなんて、<wbr>ちょっと<wbr>後ろめたい」</li>
+    <li>「楽しんでる<wbr>自分を<wbr>見られるのは<wbr>照れる」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>役に立たないことに時間を使うのが、苦手です。</span></p>
-      <p class="qa-a"><b>A</b><span>すぐ役に立たなくても、楽しいと思える時間には意味があると思います。気持ちが軽くなることも、ひとつの「役に立つ」だと私は思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>役に<wbr>立たない<wbr>ことに<wbr>時間を<wbr>使うのが、<wbr>苦手です。</span></p>
+      <p class="qa-a"><b>A</b><span>すぐ役に<wbr>立たなくても、<wbr>楽しいと<wbr>思える<wbr>時間には<wbr>意味が<wbr>あると<wbr>思います。<wbr>気持ちが<wbr>軽くなる<wbr>ことも、<wbr>ひとつの<wbr>「役に<wbr>立つ」だと<wbr>私は<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>家事や仕事を片づけてからでないと、楽しめません。</span></p>
-      <p class="qa-a"><b>A</b><span>真面目な方ほど、そう感じるのかもしれません。全部が終わるのを待たなくても大丈夫です。<br>10分だけ、自分の時間をつくってみるのもいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>家事や<wbr>仕事を<wbr>片づけてからでないと、<wbr>楽しめません。</span></p>
+      <p class="qa-a"><b>A</b><span>真面目な方<wbr>ほど、<wbr>そう<wbr>感じるのかもしれません。<wbr>全部が<wbr>終わるのを<wbr>待たなくても<wbr>大丈夫です。<br>10分だけ、<wbr>自分の<wbr>時間を<wbr>つくってみるのも<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>上手にならないと、楽しんではいけない気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>上手になる前から、楽しんでいいと思います。楽しみながらつくっているうちに、少しずつ上達していくものです。</span></p>
+      <p class="qa-q"><b>Q</b><span>上<wbr>手に<wbr>ならないと、<wbr>楽しんではいけない<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>上<wbr>手に<wbr>なる<wbr>前から、<wbr>楽しんでいいと<wbr>思います。<wbr>楽しみながらつくっている<wbr>うちに、<wbr>少しずつ<wbr>上達していく<wbr>ものです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>休むことに、罪悪感があります。</span></p>
-      <p class="qa-a"><b>A</b><span>いつも頑張っている方ほど、そう感じるのかもしれません。自分のための時間も、休むことと同じくらい大切だと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>休むことに、<wbr>罪悪感が<wbr>あります。</span></p>
+      <p class="qa-a"><b>A</b><span>いつも<wbr>頑張っている<wbr>方<wbr>ほど、<wbr>そう<wbr>感じるのかもしれません。<wbr>自分の<wbr>ための<wbr>時間も、<wbr>休むことと<wbr>同じくらい<wbr>大切だと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>夢中になると、時間を無駄にした気がしてしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>夢中になれる時間は、それだけで素敵だと思います。無駄だったかどうかを、あとから決めなくてもいいんです。</span></p>
+      <p class="qa-q"><b>Q</b><span>夢中に<wbr>なると、<wbr>時間を<wbr>無駄に<wbr>した<wbr>気が<wbr>してしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>夢中に<wbr>なれる<wbr>時間は、<wbr>それだけで<wbr>素敵だと<wbr>思います。<wbr>無駄だったか<wbr>どうかを、<wbr>あとから<wbr>決めなくても<wbr>いいんです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>好きなことが、いつの間にか義務になってしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>真面目に向き合う方ほど、そうなりやすいのかもしれません。今回の内容は、全部をこなすためのものではありません。<br>楽しいと思える範囲で使っていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>好きな<wbr>ことが、<wbr>いつの<wbr>間にか<wbr>義務に<wbr>なってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>真面目に<wbr>向き合う<wbr>方<wbr>ほど、<wbr>そうなりやすいのかもしれません。<wbr>今回の<wbr>内容は、<wbr>全部を<wbr>こな<wbr>すための<wbr>ものでは<wbr>ありません。<br>楽しいと<wbr>思える<wbr>範囲で<wbr>使っていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>楽しんでいる自分を、人に見せるのが照れくさいです。</span></p>
-      <p class="qa-a"><b>A</b><span>誰にも見せずに楽しむ時間があってもいいと思います。見せても見せなくても、どちらでも大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>楽しんでいる<wbr>自分を、<wbr>人に<wbr>見せるのが<wbr>照れくさいです。</span></p>
+      <p class="qa-a"><b>A</b><span>誰にも<wbr>見せずに<wbr>楽しむ<wbr>時間が<wbr>あっても<wbr>いいと<wbr>思います。<wbr>見せても<wbr>見せなくても、<wbr>どちらでも<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>好きなことに時間を使うのが、少し贅沢に感じます。</span></p>
-      <p class="qa-a"><b>A</b><span>何に時間を使いたいかは、人それぞれだと思います。ご自身の生活を大切にしながら、無理のない形で考えていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>好きな<wbr>ことに<wbr>時間を<wbr>使うのが、<wbr>少し<wbr>贅沢に<wbr>感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>何に<wbr>時間を<wbr>使いたいかは、<wbr>人それぞれだと<wbr>思います。<wbr>ご自身の<wbr>生活を<wbr>大切にしながら、<wbr>無理の<wbr>ない形で<wbr>考えていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>覚えることより楽しむことを大切にしたいです。</span></p>
-      <p class="qa-a"><b>A</b><span>その気持ちも大切にしていただきたいです。今回の内容には仕事の話もありますが、最初からすべてを自分の課題にしなくてもいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>覚える<wbr>ことより<wbr>楽しむことを<wbr>大切に<wbr>したいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その<wbr>気持ちも<wbr>大切に<wbr>していただきたいです。<wbr>今回の<wbr>内容には<wbr>仕事の<wbr>話も<wbr>ありますが、<wbr>最初から<wbr>すべてを<wbr>自分の<wbr>課題に<wbr>しなくても<wbr>いいと<wbr>思います。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s5">見せること、表現すること</h2>
+  <h2 class="sect" id="s5">見せる<wbr>こと、<wbr>表現する<wbr>こと</h2>
   <ul class="honne">
-    <li>「私の作品なんて、誰も見たくないよね」</li>
-    <li>「批判されたら立ち直れない」</li>
-    <li>「真似って思われたらどうしよう」</li>
-    <li>「名前を出すのは、まだ無理」</li>
+    <li>「私の<wbr>作品なんて、<wbr>誰も<wbr>見たくないよね」</li>
+    <li>「批判されたら<wbr>立ち直れない」</li>
+    <li>「真似って<wbr>思われたら<wbr>どうしよう」</li>
+    <li>「名前を<wbr>出すのは、<wbr>まだ<wbr>無理」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分の作品を見せるのが恥ずかしいです。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から公開しなくても大丈夫です。まずは自分のためにつくって楽しむ時間があってもいいですよね。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分の<wbr>作品を<wbr>見せるのが<wbr>恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>公開しなくても<wbr>大丈夫です。<wbr>まずは<wbr>自分の<wbr>ために<wbr>つくって<wbr>楽しむ<wbr>時間が<wbr>あっても<wbr>いいですよね。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分の世界観に、価値があるとは思えません。</span></p>
-      <p class="qa-a"><b>A</b><span>価値は、最初から決まっているものではないと思います。つくり続けるうちに、自分でも気づいていなかった良さが見えてくることもあります。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分の<wbr>世界観に、<wbr>価値が<wbr>あるとは<wbr>思えません。</span></p>
+      <p class="qa-a"><b>A</b><span>価値は、<wbr>最初から<wbr>決まっている<wbr>ものではないと<wbr>思います。<wbr>つくり続ける<wbr>うちに、<wbr>自分でも<wbr>気づいていなかった<wbr>良さが<wbr>見えてくることもあります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>批判されたら、立ち直れない気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>怖いと感じるのは当然だと思います。最初から誰かに見せる必要はありません。ご自身が安心できる範囲で楽しんでいただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>批判されたら、<wbr>立ち直れない<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>怖いと<wbr>感じるのは<wbr>当然だと<wbr>思います。<wbr>最初から<wbr>誰かに<wbr>見せる<wbr>必要は<wbr>ありません。<wbr>ご自身が<wbr>安心できる<wbr>範囲で<wbr>楽しんでいただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>人と違う表現を、避けてしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>人と違う表現は、それだけで目に留まることもあります。いきなり大胆にしなくても大丈夫です。<br>少しずつ自分らしさを足していけたらいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>人と<wbr>違う<wbr>表現を、<wbr>避けてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>人と<wbr>違う<wbr>表現は、<wbr>それだけで<wbr>目に<wbr>留まることもあります。<wbr>いきなり<wbr>大胆にしなくても<wbr>大丈夫です。<br>少し<wbr>ずつ<wbr>自分らしさを<wbr>足していけたら<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰かの真似だと思われるのが怖いです。</span></p>
-      <p class="qa-a"><b>A</b><span>好きな作品から刺激を受けるのは、自然なことだと思います。そこに自分の好きな色や雰囲気を少しずつ混ぜていくと、自分らしい作品に近づいていきます。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰かの<wbr>真似だと<wbr>思われるのが<wbr>怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>好きな<wbr>作品から<wbr>刺激を<wbr>受けるのは、<wbr>自然な<wbr>ことだと<wbr>思います。<wbr>そこに<wbr>自分の<wbr>好きな<wbr>色や<wbr>雰囲気を<wbr>少しずつ混ぜていくと、<wbr>自分らしい<wbr>作品に<wbr>近づいていきます。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分の名前を出すのが、恥ずかしいです。</span></p>
-      <p class="qa-a"><b>A</b><span>名前を出すかどうかは、ご自身で決めて大丈夫です。まずは自分のためにつくるところからでいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分の<wbr>名前を<wbr>出すのが、<wbr>恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>名前を<wbr>出すか<wbr>どうかは、<wbr>ご自身で<wbr>決めて<wbr>大丈夫です。<wbr>まずは<wbr>自分の<wbr>ために<wbr>つくる<wbr>ところからで<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>完成していないものは、見せられません。</span></p>
-      <p class="qa-a"><b>A</b><span>完成するまで見せなくても大丈夫です。ご自身が納得できるまで、ゆっくりつくっていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>完成していない<wbr>ものは、<wbr>見せられません。</span></p>
+      <p class="qa-a"><b>A</b><span>完成するまで<wbr>見せなくても<wbr>大丈夫です。<wbr>ご自身が<wbr>納得できるまで、<wbr>ゆっくりつくっていただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰にも見せない作品に、意味があるのかなと思ってしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>あると思います。自分が見て嬉しくなる作品は、それだけで十分素敵です。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰にも<wbr>見せない<wbr>作品に、<wbr>意味が<wbr>あるのかなと<wbr>思ってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>あると<wbr>思います。<wbr>自分が<wbr>見て<wbr>嬉しくなる<wbr>作品は、<wbr>それだけで<wbr>十分素敵です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>気持ちを言葉で説明するのが苦手です。</span></p>
-      <p class="qa-a"><b>A</b><span>うまく言えなくても大丈夫です。好きな画像を参考にしたり、言葉を少しずつ足したりしながら形にしていけます。</span></p>
+      <p class="qa-q"><b>Q</b><span>気持ちを<wbr>言葉で<wbr>説明するのが<wbr>苦手です。</span></p>
+      <p class="qa-a"><b>A</b><span>うまく<wbr>言えなくても<wbr>大丈夫です。<wbr>好きな<wbr>画像を<wbr>参考に<wbr>したり、<wbr>言葉を<wbr>少しずつ足したりしながら<wbr>形に<wbr>していけます。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s6">言葉にしにくい気持ちへのお返事</h2>
+  <h2 class="sect" id="s6">言葉に<wbr>しにくい気持ちへの<wbr>お返事</h2>
   <ul class="honne">
     <li>「どうせ私なんて」</li>
-    <li>「頑張ってること、誰も知らないし」</li>
-    <li>「自分のことは、いつも後回し」</li>
-    <li>「本当は、ちょっと認めてほしい」</li>
+    <li>「頑張ってる<wbr>こと、<wbr>誰も<wbr>知らないし」</li>
+    <li>「自分の<wbr>ことは、<wbr>いつも<wbr>後回し」</li>
+    <li>「本当は、<wbr>ちょっと<wbr>認めて<wbr>ほしい」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>何か始めたいのに、いつも自分のことは後回しです。</span></p>
-      <p class="qa-a"><b>A</b><span>そういう時間が続くこともありますよね。今すぐ大きく生活を変える必要はありません。<br>自分が気になったことに、少しだけ時間を使ってみるのもいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>何か<wbr>始めたいのに、<wbr>いつも<wbr>自分の<wbr>ことは<wbr>後回しです。</span></p>
+      <p class="qa-a"><b>A</b><span>そういう<wbr>時間が<wbr>続く<wbr>こともありますよね。<wbr>今すぐ<wbr>大きく<wbr>生活を<wbr>変える<wbr>必要は<wbr>ありません。<br>自分が<wbr>気に<wbr>なったことに、<wbr>少しだけ<wbr>時間を<wbr>使ってみるのも<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分のためにお金を使うことに、まだ迷いがあります。</span></p>
-      <p class="qa-a"><b>A</b><span>決して小さな金額ではないので、迷って当然だと思います。無理に背中を押すよりも、内容を知って納得して選んでいただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分の<wbr>ために<wbr>お金を<wbr>使うことに、<wbr>まだ<wbr>迷いが<wbr>あります。</span></p>
+      <p class="qa-a"><b>A</b><span>決して<wbr>小さな<wbr>金額ではないので、<wbr>迷って<wbr>当然だと<wbr>思います。<wbr>無理に<wbr>背中を<wbr>押すよりも、<wbr>内容を<wbr>知って<wbr>納得して<wbr>選んでいただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>何かを始めるなら、ちゃんと結果を出さなきゃと思ってしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から結果まで決めなくてもいいと思います。まず知ること、試すことにも意味があると私は感じています。</span></p>
+      <p class="qa-q"><b>Q</b><span>何かを<wbr>始めるなら、<wbr>ちゃんと<wbr>結果を<wbr>出さなきゃと<wbr>思ってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>結果まで<wbr>決めなくても<wbr>いいと<wbr>思います。<wbr>まず<wbr>知る<wbr>こと、<wbr>試すことにも<wbr>意味が<wbr>あると<wbr>私は<wbr>感じています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>周りの人は自分の道を見つけている気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>人それぞれ、興味を持つ時期も進み方も違いますよね。比べるよりも、今のご自身が何に惹かれるかを大切にしていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>周りの<wbr>人は<wbr>自分の<wbr>道を<wbr>見つけている<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>人それぞれ、<wbr>興味を<wbr>持つ時期も<wbr>進み方も<wbr>違いますよね。<wbr>比べるよりも、<wbr>今の<wbr>ご自身が<wbr>何に<wbr>惹かれるかを<wbr>大切に<wbr>していただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>本当は何かに夢中になりたい気持ちがあります。</span></p>
-      <p class="qa-a"><b>A</b><span>その気持ちを大切にしていただきたいです。今回の分野がそのひとつになるかどうか、まずは知っていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>本当は<wbr>何かに<wbr>夢中に<wbr>なりたい<wbr>気持ちが<wbr>あります。</span></p>
+      <p class="qa-a"><b>A</b><span>その<wbr>気持ちを<wbr>大切に<wbr>していただきたいです。<wbr>今回の<wbr>分野が<wbr>その<wbr>ひとつに<wbr>なるか<wbr>どうか、<wbr>まずは<wbr>知っていただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>今の私が、仕事の可能性を考えるなんて大げさでしょうか。</span></p>
-      <p class="qa-a"><b>A</b><span>そんなことはないと思います。仕事にするかどうかを決める前に、選択肢を知っておくこともできます。</span></p>
+      <p class="qa-q"><b>Q</b><span>今の<wbr>私が、<wbr>仕事の<wbr>可能性を<wbr>考える<wbr>なんて<wbr>大げさでしょうか。</span></p>
+      <p class="qa-a"><b>A</b><span>そんな<wbr>ことはないと<wbr>思います。<wbr>仕事に<wbr>するか<wbr>どうかを<wbr>決める<wbr>前に、<wbr>選択肢を<wbr>知っておくことも<wbr>できます。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>憧れる気持ちはあるけれど、自分のことになると急に自信がなくなります。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から自信がある方ばかりではないと思います。私も未経験から学んできたので、その距離を少しでも近く感じていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>憧れる<wbr>気持ちは<wbr>あるけれど、<wbr>自分の<wbr>ことに<wbr>なると<wbr>急に<wbr>自信が<wbr>なくなります。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>自信が<wbr>ある<wbr>方ばかりではないと<wbr>思います。<wbr>私も<wbr>未経験から<wbr>学ん<wbr>できたので、<wbr>その<wbr>距離を<wbr>少しでも<wbr>近く<wbr>感じていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>昔は好きなことがたくさんあったのに、最近はわからなくなりました。</span></p>
-      <p class="qa-a"><b>A</b><span>無理に答えを見つけなくてもいいと思います。少し気になるものに触れながら、ゆっくり見つけていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>昔は<wbr>好きな<wbr>ことがたくさん<wbr>あったのに、<wbr>最近は<wbr>わから<wbr>なくなりました。</span></p>
+      <p class="qa-a"><b>A</b><span>無理に<wbr>答えを<wbr>見つけなくても<wbr>いいと<wbr>思います。<wbr>少し<wbr>気に<wbr>なる<wbr>ものに<wbr>触れながら、<wbr>ゆっくり<wbr>見つけていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>私には何もないと思ってしまうことがあります。</span></p>
-      <p class="qa-a"><b>A</b><span>今までの経験や、好きだと感じることが、これからの興味につながることもあると思います。<br>何かを証明するために始めなくてもいいんです。</span></p>
+      <p class="qa-q"><b>Q</b><span>私には<wbr>何もないと<wbr>思ってしまうことがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>今までの<wbr>経験や、<wbr>好きだと<wbr>感じる<wbr>ことが、<wbr>これからの<wbr>興味に<wbr>つながることもあると<wbr>思います。<br>何かを<wbr>証明する<wbr>ために<wbr>始めなくても<wbr>いいんです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>頑張っていることを、誰にも気づいてもらえません。</span></p>
-      <p class="qa-a"><b>A</b><span>毎日のことほど、見えにくいですよね。自分のためにつくった作品は、頑張ってきた自分を形にして残せるものでもあると思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>頑張っている<wbr>ことを、<wbr>誰にも<wbr>気づいて<wbr>もらえません。</span></p>
+      <p class="qa-a"><b>A</b><span>毎日の<wbr>こと<wbr>ほど、<wbr>見えに<wbr>くいですよね。<wbr>自分の<wbr>ために<wbr>つくった<wbr>作品は、<wbr>頑張ってきた<wbr>自分を<wbr>形に<wbr>して<wbr>残せる<wbr>ものでもあると<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分で自分を褒められません。</span></p>
-      <p class="qa-a"><b>A</b><span>褒めるのが苦手な方は、少なくないと思います。つくれた画像を「いいな」と思えたら、それだけで十分です。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分で<wbr>自分を<wbr>褒められません。</span></p>
+      <p class="qa-a"><b>A</b><span>褒めるのが<wbr>苦手な<wbr>方は、<wbr>少なくないと<wbr>思います。<wbr>つくれた<wbr>画像を<wbr>「いいな」と<wbr>思えたら、<wbr>それだけで<wbr>十分です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>褒められても、つい否定してしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>照れてしまいますよね。否定する前に、一度「ありがとう」と受け取ってみるのもいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>褒められても、<wbr>つい<wbr>否定してしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>照れてしまいますよね。<wbr>否定する<wbr>前に、<wbr>一度<wbr>「ありがとう」と<wbr>受け取ってみるのも<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰かと比べられるのが、つらいです。</span></p>
-      <p class="qa-a"><b>A</b><span>比べられると苦しくなりますよね。つくる作品には、比べて決まる正解はないと思っています。<br>ご自身のペースで楽しんでいただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰かと<wbr>比べられるのが、<wbr>つらいです。</span></p>
+      <p class="qa-a"><b>A</b><span>比べられると<wbr>苦しくなりますよね。<wbr>つくる<wbr>作品には、<wbr>比べて<wbr>決まる<wbr>正解は<wbr>ないと<wbr>思っています。<br>ご自身の<wbr>ペースで<wbr>楽しんでいただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰かに必要とされたい気持ちがあります。</span></p>
-      <p class="qa-a"><b>A</b><span>とても自然な気持ちだと思います。お仕事は、誰かに必要とされる形のひとつでもあります。<br>今回の内容では、その入口で大切なことをお伝えしています。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰かに<wbr>必要と<wbr>されたい<wbr>気持ちが<wbr>あります。</span></p>
+      <p class="qa-a"><b>A</b><span>とても<wbr>自然な<wbr>気持ちだと<wbr>思います。<wbr>お仕事は、<wbr>誰かに<wbr>必要と<wbr>される<wbr>形の<wbr>ひとつでも<wbr>あります。<br>今回の<wbr>内容では、<wbr>その<wbr>入口で<wbr>大切な<wbr>ことを<wbr>お伝えしています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>仕事や家のこと以外の自分が、よくわかりません。</span></p>
-      <p class="qa-a"><b>A</b><span>役割の中で頑張ってきた方ほど、そう感じるのかもしれません。好きな色や雰囲気を集めていくと、別の自分が少しずつ見えてくることもあります。</span></p>
+      <p class="qa-q"><b>Q</b><span>仕事や<wbr>家の<wbr>こと<wbr>以外の<wbr>自分が、<wbr>よく<wbr>わかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>役割の<wbr>中で<wbr>頑張ってきた<wbr>方<wbr>ほど、<wbr>そう<wbr>感じるのかもしれません。<wbr>好きな<wbr>色や<wbr>雰囲気を<wbr>集めていくと、<wbr>別の<wbr>自分が<wbr>少しずつ<wbr>見えてくることもあります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>小さな楽しみが、最近減ってしまいました。</span></p>
-      <p class="qa-a"><b>A</b><span>忙しい毎日だと、そうなりますよね。AIで画像をつくる時間が、小さな楽しみのひとつになったら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>小さな<wbr>楽しみが、<wbr>最近<wbr>減ってしまいました。</span></p>
+      <p class="qa-a"><b>A</b><span>忙しい<wbr>毎日だと、<wbr>そうなりますよね。<wbr>AIで<wbr>画像を<wbr>つくる<wbr>時間が、<wbr>小さな<wbr>楽しみの<wbr>ひとつに<wbr>なったら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>一人の時間を、どう使えばいいかわかりません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初は戸惑いますよね。好きなものを思い浮かべて画像にしてみるのも、楽しい時間の使い方だと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>一人の<wbr>時間を、<wbr>どう<wbr>使えば<wbr>いいか<wbr>わかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初は<wbr>戸惑いますよね。<wbr>好きな<wbr>ものを<wbr>思い浮かべて<wbr>画像に<wbr>してみるのも、<wbr>楽しい<wbr>時間の<wbr>使い方だと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分のための、新しい習慣が欲しいです。</span></p>
-      <p class="qa-a"><b>A</b><span>素敵だと思います。毎日でなくても、週に一度自分のためにつくる時間があるだけで、気持ちが変わることもあります。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分の<wbr>ための、<wbr>新しい<wbr>習慣が<wbr>欲しいです。</span></p>
+      <p class="qa-a"><b>A</b><span>素敵だと<wbr>思います。<wbr>毎日でなくても、<wbr>週に<wbr>一度<wbr>自分の<wbr>ために<wbr>つくる<wbr>時間が<wbr>あるだけで、<wbr>気持ちが<wbr>変わる<wbr>こともあります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>本気になって、失敗するのが怖いです。</span></p>
-      <p class="qa-a"><b>A</b><span>本気になるほど、怖くなりますよね。最初から本気にならなくても大丈夫です。楽しいと思える気持ちを、少しずつ育てていけたらいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>本気に<wbr>なって、<wbr>失敗するのが<wbr>怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>本気に<wbr>なる<wbr>ほど、<wbr>怖くなりますよね。<wbr>最初から<wbr>本気に<wbr>ならなくても<wbr>大丈夫です。<wbr>楽しいと<wbr>思える<wbr>気持ちを、<wbr>少しずつ育てていけたら<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>目標を口にすると、重くなってしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>口にしなくても大丈夫です。心の中で「やってみたい」と思っているだけで、十分だと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>目標を<wbr>口に<wbr>すると、<wbr>重くなってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>口にしなくても<wbr>大丈夫です。<wbr>心の<wbr>中で<wbr>「やってみたい」と<wbr>思っているだけで、<wbr>十分だと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>挑戦しても、結局何も変わらない気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>そう思ってしまうときもありますよね。大きく変わらなくても、新しいことを知った分だけ、選べることは増えていくと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>挑戦しても、<wbr>結局<wbr>何も<wbr>変わらない<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>そう<wbr>思ってしまう<wbr>ときも<wbr>ありますよね。<wbr>大きく<wbr>変わらなくても、<wbr>新しい<wbr>ことを<wbr>知った<wbr>分だけ、<wbr>選べる<wbr>ことは<wbr>増えていくと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>今の自分を、否定したくありません。</span></p>
-      <p class="qa-a"><b>A</b><span>否定しなくていいと思います。今の自分のまま、新しいことを少し足してみるくらいの気持ちで大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>今の<wbr>自分を、<wbr>否定したく<wbr>ありません。</span></p>
+      <p class="qa-a"><b>A</b><span>否定しなくていいと<wbr>思います。<wbr>今の<wbr>自分の<wbr>まま、<wbr>新しい<wbr>ことを<wbr>少し<wbr>足してみる<wbr>くらいの<wbr>気持ちで<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>これまでの経験が、無駄になる気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>無駄にはならないと思います。これまでの経験や好きなものが、つくる作品ににじみ出ることもあります。</span></p>
+      <p class="qa-q"><b>Q</b><span>これまでの<wbr>経験が、<wbr>無駄に<wbr>なる<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>無駄には<wbr>ならないと<wbr>思います。<wbr>これまでの<wbr>経験や<wbr>好きな<wbr>ものが、<wbr>つくる<wbr>作品ににじみ出る<wbr>こともあります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>興味はあるのに、誰かに説明できる理由がありません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から立派な理由は必要ないと思います。ご自身が少し気になった、その気持ちから考えていただいていいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>興味は<wbr>あるのに、<wbr>誰かに<wbr>説明できる<wbr>理由が<wbr>ありません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>立派な<wbr>理由は<wbr>必要ないと<wbr>思います。<wbr>ご自身が<wbr>少し<wbr>気に<wbr>なった、<wbr>その<wbr>気持ちから<wbr>考えていただいていいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰にも言わずに、自分だけで始めたいです。</span></p>
-      <p class="qa-a"><b>A</b><span>もちろん、ご自身のペースで考えていただけます。最初から誰かに発表する必要はありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰にも<wbr>言わずに、<wbr>自分だけで<wbr>始めたいです。</span></p>
+      <p class="qa-a"><b>A</b><span>もちろん、<wbr>ご自身の<wbr>ペースで<wbr>考えていただけます。<wbr>最初から<wbr>誰かに<wbr>発表する<wbr>必要は<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>本当は少し仕事にも興味があります。でも言うのが恥ずかしいです。</span></p>
-      <p class="qa-a"><b>A</b><span>その気持ちも大切にしていただきたいです。今すぐ誰かに話したり、目標を宣言したりする必要はありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>本当は<wbr>少し<wbr>仕事にも<wbr>興味が<wbr>あります。<wbr>でも<wbr>言うのが<wbr>恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その<wbr>気持ちも<wbr>大切に<wbr>していただきたいです。<wbr>今すぐ<wbr>誰かに<wbr>話したり、<wbr>目標を<wbr>宣言したりする<wbr>必要は<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分に期待して、またがっかりするのが怖いです。</span></p>
-      <p class="qa-a"><b>A</b><span>何か大きな結果を約束するものではありません。まずはどんな分野なのかを知り、できそうなことを一つずつ考えていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分に<wbr>期待して、<wbr>またがっかりするのが<wbr>怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>何か<wbr>大きな<wbr>結果を<wbr>約束する<wbr>ものでは<wbr>ありません。<wbr>まずは<wbr>どんな<wbr>分野なのかを<wbr>知り、<wbr>できそうな<wbr>ことを<wbr>一つずつ<wbr>考えていただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>『私でも始めていいのかな』という気持ちが、ずっとあります。</span></p>
-      <p class="qa-a"><b>A</b><span>もちろん、興味を持っていただくことに遠慮はいりません。ただ、購入は別のことです。<br>内容や条件を見て、今のご自身に合うと思えたときに選んでいただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>『私でも<wbr>始めて<wbr>いいのかな』と<wbr>いう<wbr>気持ちが、<wbr>ずっと<wbr>あります。</span></p>
+      <p class="qa-a"><b>A</b><span>もちろん、<wbr>興味を<wbr>持っていただく<wbr>ことに<wbr>遠慮は<wbr>いりません。<wbr>ただ、<wbr>購入は<wbr>別の<wbr>ことです。<br>内容や<wbr>条件を<wbr>見て、<wbr>今の<wbr>ご自身に<wbr>合うと<wbr>思えた<wbr>ときに<wbr>選んでいただけたら<wbr>嬉しいです。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s7">続け方と内容のこと</h2>
+  <h2 class="sect" id="s7">続け方と<wbr>内容の<wbr>こと</h2>
   <ul class="honne">
-    <li>「どうせ続かない気がする」</li>
-    <li>「全部覚えられる自信ない」</li>
-    <li>「忙しくて、そんな時間ない」</li>
-    <li>「難しい言葉が出てきたら無理かも」</li>
+    <li>「どうせ続かない<wbr>気が<wbr>する」</li>
+    <li>「全部<wbr>覚えられる<wbr>自信ない」</li>
+    <li>「忙しくて、<wbr>そんな<wbr>時間ない」</li>
+    <li>「難しい<wbr>言葉が<wbr>出てきたら<wbr>無理かも」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>以前にも何かを始めたのに、続かなかったことがあります。</span></p>
-      <p class="qa-a"><b>A</b><span>そういう経験があると、また同じことになるかなと迷いますよね。私も、何かを始めるときに全部を一度に覚えなくてもいいと思っています。<br>今回は手元に置いて、必要なときに戻ってこられる内容にしています。少しずつで大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>以前にも<wbr>何かを<wbr>始めたのに、<wbr>続かなかった<wbr>ことがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>そういう<wbr>経験が<wbr>あると、<wbr>また<wbr>同じことに<wbr>なるかなと<wbr>迷いますよね。<wbr>私も、<wbr>何かを<wbr>始める<wbr>ときに<wbr>全部を<wbr>一度に<wbr>覚えなくても<wbr>いいと<wbr>思っています。<br>今回は<wbr>手元に<wbr>置いて、<wbr>必要な<wbr>ときに<wbr>戻って<wbr>こられる<wbr>内容に<wbr>しています。<wbr>少し<wbr>ずつで<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>始める前から、続かなかったときのことを考えてしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から完璧に続けることを目標にしなくてもいいと思います。手元に置いて、また見たいときに戻れる形で使っていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>始める<wbr>前から、<wbr>続かなかった<wbr>ときの<wbr>ことを<wbr>考えてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>完璧に<wbr>続ける<wbr>ことを<wbr>目標にしなくても<wbr>いいと<wbr>思います。<wbr>手元に<wbr>置いて、<wbr>また<wbr>見たい<wbr>ときに<wbr>戻れる<wbr>形で<wbr>使っていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>どうせ続かない気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>そう思ってしまう日もありますよね。毎日続けることより、また開きたくなったときに戻ってこられることを大切にしています。<br>間があいても、そこからまた始めて大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>どうせ続かない<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>そう<wbr>思ってしまう<wbr>日も<wbr>ありますよね。<wbr>毎日<wbr>続ける<wbr>ことより、<wbr>また<wbr>開きたくなった<wbr>ときに<wbr>戻って<wbr>こられる<wbr>ことを<wbr>大切に<wbr>しています。<br>間が<wbr>あいても、<wbr>そこから<wbr>また<wbr>始めて<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>内容が多くて、全部覚えられるか心配です。</span></p>
-      <p class="qa-a"><b>A</b><span>全部を一度に覚えていただくためのものではありません。手元に置いて、画像をつくりながら必要なところを見返していただけるように考えています。</span></p>
+      <p class="qa-q"><b>Q</b><span>内容が<wbr>多くて、<wbr>全部<wbr>覚えられるか<wbr>心配です。</span></p>
+      <p class="qa-a"><b>A</b><span>全部を<wbr>一度に<wbr>覚えていただく<wbr>ための<wbr>ものでは<wbr>ありません。<wbr>手元に<wbr>置いて、<wbr>画像を<wbr>つくりながら<wbr>必要な<wbr>ところを<wbr>見返していただけるように<wbr>考えています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>毎日時間を取れなくてもいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>もちろんです。ご自身の生活に合わせて、無理なく進めていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>毎日<wbr>時間を<wbr>取れなくても<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。<wbr>ご自身の<wbr>生活に<wbr>合わせて、<wbr>無理なく<wbr>進めて<wbr>いただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>忙しくて、少しずつしか読めません。</span></p>
-      <p class="qa-a"><b>A</b><span>短い時間でもいいと思います。読む日も、画像をつくる日も、ご自身のペースで進めていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>忙しくて、<wbr>少し<wbr>ずつしか<wbr>読めません。</span></p>
+      <p class="qa-a"><b>A</b><span>短い<wbr>時間でも<wbr>いいと<wbr>思います。<wbr>読む<wbr>日も、<wbr>画像を<wbr>つくる<wbr>日も、<wbr>ご自身の<wbr>ペースで<wbr>進めて<wbr>いただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>途中でお休みしてもいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>もちろん、ご自身のペースで進めていただけます。閲覧条件については購入前のご案内をご確認ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>途中で<wbr>お休みしても<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろん、<wbr>ご自身の<wbr>ペースで<wbr>進めて<wbr>いただけます。<wbr>閲覧条件に<wbr>ついては<wbr>購入前の<wbr>ご案内を<wbr>ご確認ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>どこから見たらいいかわかりません。</span></p>
-      <p class="qa-a"><b>A</b><span>まずは全体を見て、興味のある内容から触れてみてください。推奨される順序がある部分は、商品内の案内に沿って進めてくださいね。</span></p>
+      <p class="qa-q"><b>Q</b><span>どこから<wbr>見たら<wbr>いいか<wbr>わかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>まずは<wbr>全体を<wbr>見て、<wbr>興味の<wbr>ある<wbr>内容から<wbr>触れてみてください。<wbr>推奨される<wbr>順序が<wbr>ある<wbr>部分は、<wbr>商品内の<wbr>案内に<wbr>沿って<wbr>進めてくださいね。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>全部を順番に学ばないといけませんか？</span></p>
-      <p class="qa-a"><b>A</b><span>最初からすべてを進める必要はありません。興味や目的に合わせて、少しずつ知っていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>全部を<wbr>順番に<wbr>学ばないと<wbr>いけませんか？</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>すべてを<wbr>進める<wbr>必要は<wbr>ありません。<wbr>興味や<wbr>目的に<wbr>合わせて、<wbr>少しずつ<wbr>知っていただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>2つとも、最初から全部学ばないといけませんか？</span></p>
-      <p class="qa-a"><b>A</b><span>いいえ。興味のあるところから、ご自身のペースで進めていただけたらと思います。必要になったときに見返せるようにまとめています。</span></p>
+      <p class="qa-q"><b>Q</b><span>2つとも、<wbr>最初から<wbr>全部<wbr>学ばないと<wbr>いけませんか？</span></p>
+      <p class="qa-a"><b>A</b><span>いいえ。<wbr>興味の<wbr>ある<wbr>ところから、<wbr>ご自身の<wbr>ペースで<wbr>進めて<wbr>いただけたらと<wbr>思います。<wbr>必要に<wbr>なった<wbr>ときに<wbr>見返せるように<wbr>まとめています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>難しい言葉が出てきたらどうしよう。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から全部知っている必要はありません。わからないところは調べたり見返したりしながら、少しずつ理解していただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>難しい<wbr>言葉が<wbr>出てきたら<wbr>どうしよう。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>全部<wbr>知っている<wbr>必要は<wbr>ありません。<wbr>わからない<wbr>ところは<wbr>調べたり<wbr>見返したりしながら、<wbr>少しずつ<wbr>理解していただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>AI編集も最初から学ぶ必要がありますか？</span></p>
-      <p class="qa-a"><b>A</b><span>AI編集の内容もセットですが、最初からすべてを学ぶ必要はありません。興味に合わせて見ていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>AI編集も<wbr>最初から<wbr>学ぶ必要が<wbr>ありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>AI編集の<wbr>内容も<wbr>セットですが、<wbr>最初から<wbr>すべてを<wbr>学ぶ必要は<wbr>ありません。<wbr>興味に<wbr>合わせて<wbr>見ていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>学びながら画像をつくってもいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>もちろんです。むしろ、手元に置いておきながら、実際に画像をつくる時間と一緒に楽しんでいただけたらと思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>学びながら<wbr>画像を<wbr>つくっても<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。<wbr>むしろ、<wbr>手元に<wbr>置いて<wbr>おきながら、<wbr>実際に<wbr>画像を<wbr>つくる<wbr>時間と<wbr>一緒に<wbr>楽しんでいただけたらと<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>買ったら全部やらないといけない気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>最初から全部を終わらせる必要はありません。手元に置いて、必要なときに見返しながら学んでいただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>買ったら<wbr>全部<wbr>やらないと<wbr>いけない<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から<wbr>全部を<wbr>終わらせる<wbr>必要は<wbr>ありません。<wbr>手元に<wbr>置いて、<wbr>必要な<wbr>ときに<wbr>見返しながら<wbr>学んでいただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>買ったら『頑張らなきゃ』という気持ちになりそうです。</span></p>
-      <p class="qa-a"><b>A</b><span>そう思う方もいらっしゃると思います。全部を急いで進めるより、必要なときに見返せるものとして使っていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>買ったら<wbr>『頑張らなきゃ』と<wbr>いう<wbr>気持ちに<wbr>なりそうです。</span></p>
+      <p class="qa-a"><b>A</b><span>そう<wbr>思う<wbr>方も<wbr>いらっしゃると<wbr>思います。<wbr>全部を<wbr>急いで<wbr>進めるより、<wbr>必要な<wbr>ときに<wbr>見返せる<wbr>ものと<wbr>して<wbr>使っていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>買ったら、何か成果を出さないといけない気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>そう思うと、始めること自体が重くなってしまいますよね。今回の内容を読んだからといって、すぐに何かを証明する必要はありません。<br>自分のペースで学びながら、その先を考えていただけたらと思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>買ったら、<wbr>何か<wbr>成果を<wbr>出さないと<wbr>いけない<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>そう<wbr>思うと、<wbr>始める<wbr>こと自体が<wbr>重くなってしまいますよね。<wbr>今回の<wbr>内容を<wbr>読んだからと<wbr>いって、<wbr>すぐに<wbr>何かを<wbr>証明する<wbr>必要は<wbr>ありません。<br>自分の<wbr>ペースで<wbr>学びながら、<wbr>その先を<wbr>考えていただけたらと<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>今まで買ったものを、最後まで使えなかったことがあります。</span></p>
-      <p class="qa-a"><b>A</b><span>だからこそ、今回の内容が本当にご自身に必要か、購入前に確認していただきたいです。<br>無理に決めなくて大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>今まで<wbr>買った<wbr>ものを、<wbr>最後まで<wbr>使えなかった<wbr>ことがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>だから<wbr>こそ、<wbr>今回の<wbr>内容が<wbr>本当に<wbr>ご自身に<wbr>必要か、<wbr>購入前に<wbr>確認していただきたいです。<br>無理に<wbr>決めなくて<wbr>大丈夫です。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s8">この分野とお仕事のこと</h2>
+  <h2 class="sect" id="s8">この<wbr>分野とお仕事の<wbr>こと</h2>
   <ul class="honne">
-    <li>「稼げないなら意味ないんじゃない？」</li>
-    <li>「ブランドのお仕事なんて、遠すぎる」</li>
-    <li>「プロ向けの話なんでしょ」</li>
-    <li>「画像がつくれたら、それでよくない？」</li>
+    <li>「稼げないなら<wbr>意味ないんじゃない？」</li>
+    <li>「ブランドの<wbr>お仕事なんて、<wbr>遠すぎる」</li>
+    <li>「プロ向けの<wbr>話なんでしょ」</li>
+    <li>「画像が<wbr>つくれたら、<wbr>それで<wbr>よくない？」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>AIクリエイティブって、どんな分野ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>AIを使った画像や動画などの制作を、表現やお仕事につなげていく分野です。今回の内容では、その先の仕事で大切なこともまとめています。</span></p>
+      <p class="qa-q"><b>Q</b><span>AIクリエイティブって、<wbr>どんな<wbr>分野ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AIを<wbr>使った<wbr>画像や<wbr>動画などの<wbr>制作を、<wbr>表現や<wbr>お仕事に<wbr>つな<wbr>げていく<wbr>分野です。<wbr>今回の<wbr>内容では、<wbr>その先の<wbr>仕事で<wbr>大切な<wbr>ことも<wbr>まとめています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>画像をつくれることと、仕事にすることは違いますか？</span></p>
-      <p class="qa-a"><b>A</b><span>はい。お仕事では、依頼内容を理解することや修正、納品までの進め方も大切になります。</span></p>
+      <p class="qa-q"><b>Q</b><span>画像を<wbr>つくれる<wbr>ことと、<wbr>仕事に<wbr>する<wbr>ことは<wbr>違いますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。<wbr>お仕事では、<wbr>依頼内容を<wbr>理解する<wbr>ことや<wbr>修正、<wbr>納品までの<wbr>進め方も<wbr>大切に<wbr>なります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>画像をつくるのと、お仕事としてつくるのは違いますか？</span></p>
-      <p class="qa-a"><b>A</b><span>はい。お仕事では、相手が求めるものを理解すること、修正に対応すること、納品まで責任を持つことも大切になります。<br>今回お伝えしたいのは、そうした部分も含めたお仕事のいろはです。</span></p>
+      <p class="qa-q"><b>Q</b><span>画像を<wbr>つくるのと、<wbr>お仕事と<wbr>して<wbr>つくるのは<wbr>違いますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。<wbr>お仕事では、<wbr>相手が<wbr>求める<wbr>ものを<wbr>理解する<wbr>こと、<wbr>修正に<wbr>対応する<wbr>こと、<wbr>納品まで<wbr>責任を<wbr>持つことも<wbr>大切に<wbr>なります。<br>今回お伝えしたいのは、<wbr>そうした<wbr>部<wbr>分も<wbr>含めた<wbr>お仕事の<wbr>いろはです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>どんなお仕事があるのか、まだ想像できません。</span></p>
-      <p class="qa-a"><b>A</b><span>最初はそうだと思います。今回、ブランドや企業との制作をわかりやすい例として紹介していますが、それだけが仕事の形ではありません。<br>まずは画像や動画をつくった先に、どんなことが求められるのかを知っていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>どんな<wbr>お仕事が<wbr>あるのか、<wbr>まだ<wbr>想像できません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初は<wbr>そうだと<wbr>思います。<wbr>今回、<wbr>ブランドや<wbr>企業との<wbr>制作を<wbr>わかりやすい<wbr>例と<wbr>して<wbr>紹介していますが、<wbr>それだけが<wbr>仕事の<wbr>形では<wbr>ありません。<br>まずは<wbr>画像や<wbr>動画を<wbr>つくった<wbr>先に、<wbr>どんな<wbr>ことが<wbr>求められるのかを<wbr>知っていただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>ブランドとのお仕事が中心なのでしょうか？</span></p>
-      <p class="qa-a"><b>A</b><span>ブランドや企業は、実際の仕事をわかりやすくお伝えするための例です。最初からそこを目指していただく必要はありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>ブランドとの<wbr>お仕事が<wbr>中心なのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>ブランドや<wbr>企業は、<wbr>実際の<wbr>仕事を<wbr>わかりやすく<wbr>お伝えする<wbr>ための<wbr>例です。<wbr>最初から<wbr>そこを<wbr>目指していただく<wbr>必要は<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>ブランドのお仕事は、私には遠い世界に感じます。</span></p>
-      <p class="qa-a"><b>A</b><span>そうですよね。今回ブランドや企業とのお仕事を紹介しているのは、皆さんに同じ仕事を目指してほしいからではありません。<br>実際の制作では、画像をつくるだけでなく、依頼を理解したり、修正したり、納品したりすることも大切です。<br>私が経験したことを、身近なところから知っていただきたいと思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>ブランドの<wbr>お仕事は、<wbr>私には<wbr>遠い<wbr>世界に<wbr>感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>そうですよね。<wbr>今回ブランドや<wbr>企業との<wbr>お仕事を<wbr>紹介しているのは、<wbr>皆さんに<wbr>同じ<wbr>仕事を<wbr>目指して<wbr>ほしいからでは<wbr>ありません。<br>実際の<wbr>制作では、<wbr>画像を<wbr>つくるだけでなく、<wbr>依頼を<wbr>理解したり、<wbr>修正したり、<wbr>納品したりする<wbr>ことも<wbr>大切です。<br>私が<wbr>経験した<wbr>ことを、<wbr>身近な<wbr>ところから<wbr>知っていただきたいと<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>画像がつくれたら、すぐ仕事になりますか？</span></p>
-      <p class="qa-a"><b>A</b><span>つくれることがそのままお仕事の保証になるわけではありません。だからこそ、その先で大切になることを知っていただきたいと思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>画像が<wbr>つくれたら、<wbr>すぐ<wbr>仕事に<wbr>なりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>つくれる<wbr>ことが<wbr>そのまま<wbr>お仕事の<wbr>保証に<wbr>なるわけでは<wbr>ありません。<wbr>だから<wbr>こそ、<wbr>その先で<wbr>大切に<wbr>なる<wbr>ことを<wbr>知っていただきたいと<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>お仕事につながらない画像のつくり方もあるのでしょうか？</span></p>
-      <p class="qa-a"><b>A</b><span>画像が素敵なだけでは、お仕事として求められるものと一致しない場合もあります。だからこそ、依頼内容や使われ方を考えることも大切です。<br>私が現場で感じてきたことを、今回の内容にまとめています。</span></p>
+      <p class="qa-q"><b>Q</b><span>お仕事に<wbr>つながらない<wbr>画像の<wbr>つくり方も<wbr>あるのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>画像が<wbr>素敵なだけでは、<wbr>お仕事と<wbr>して<wbr>求められる<wbr>ものと<wbr>一致しない<wbr>場合も<wbr>あります。<wbr>だから<wbr>こそ、<wbr>依頼内容や<wbr>使われ方を<wbr>考える<wbr>ことも<wbr>大切です。<br>私が<wbr>現場で<wbr>感じてきた<wbr>ことを、<wbr>今回の<wbr>内容に<wbr>まとめています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>稼げないなら、意味がないのでしょうか？</span></p>
-      <p class="qa-a"><b>A</b><span>そんなことはないと思います。今回の内容にはお仕事の話も入っていますが、稼ぐことだけがゴールではありません。<br>知って、選べるようになることにも意味があると思っています。</span></p>
+      <p class="qa-q"><b>Q</b><span>稼げないなら、<wbr>意味が<wbr>ないのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>そんな<wbr>ことはないと<wbr>思います。<wbr>今回の<wbr>内容には<wbr>お仕事の<wbr>話も<wbr>入っていますが、<wbr>稼ぐ<wbr>ことだけが<wbr>ゴールでは<wbr>ありません。<br>知って、<wbr>選べるようになることにも<wbr>意味が<wbr>あると<wbr>思っています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>プロを目指す人向けの内容に見えてしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>お仕事の話が多いので、そう見えるかもしれません。でも、未経験の方にこそ知っていただきたくてまとめました。<br>プロを目指すかどうかは、そのあとで決めていただけます。</span></p>
+      <p class="qa-q"><b>Q</b><span>プロを<wbr>目指す人向けの<wbr>内容に<wbr>見えてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>お仕事の<wbr>話が<wbr>多いので、<wbr>そう<wbr>見えるかもしれません。<wbr>でも、<wbr>未経験の<wbr>方に<wbr>こそ<wbr>知っていただきたくて<wbr>まとめました。<br>プロを<wbr>目指すか<wbr>どうかは、<wbr>その<wbr>あとで<wbr>決めて<wbr>いただけます。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>好きなことを仕事にするのが、少し怖いです。</span></p>
-      <p class="qa-a"><b>A</b><span>好きなことだからこそ、大切にしたいですよね。仕事にするかどうかは、ご自身で選べます。<br>まずはどんな仕事なのかを知るところからで大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>好きな<wbr>ことを<wbr>仕事に<wbr>するのが、<wbr>少し<wbr>怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>好きな<wbr>ことだから<wbr>こそ、<wbr>大切に<wbr>したいですよね。<wbr>仕事に<wbr>するか<wbr>どうかは、<wbr>ご自身で<wbr>選べます。<br>まずは<wbr>どんな<wbr>仕事なのかを<wbr>知る<wbr>ところからで<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>仕事の話を聞くだけでも意味がありますか？</span></p>
-      <p class="qa-a"><b>A</b><span>はい。まずはどんな分野なのかを知って、その先を考えていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>仕事の<wbr>話を<wbr>聞くだけでも<wbr>意味が<wbr>ありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。<wbr>まずは<wbr>どんな<wbr>分野なのかを<wbr>知って、<wbr>その先を<wbr>考えていただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>実際のお仕事では何が大切ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>つくることに加えて、依頼を理解し、修正し、納品まで進めることも大切です。私が経験してきたことをもとにお伝えしています。</span></p>
+      <p class="qa-q"><b>Q</b><span>実際の<wbr>お仕事では<wbr>何が<wbr>大切ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>つくる<wbr>ことに<wbr>加えて、<wbr>依頼を<wbr>理解し、<wbr>修正し、<wbr>納品まで<wbr>進める<wbr>ことも<wbr>大切です。<wbr>私が<wbr>経験してきた<wbr>ことを<wbr>もとに<wbr>お伝えしています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>仕事にしていくうえで気をつけたいこともわかりますか？</span></p>
-      <p class="qa-a"><b>A</b><span>はい。画像をつくれたら終わり、ではないことも、実際の仕事を通して感じてきました。<br>仕事にしていく中で大切だと思ったことを、今回の内容にまとめています。</span></p>
+      <p class="qa-q"><b>Q</b><span>仕事に<wbr>していく<wbr>うえで<wbr>気を<wbr>つけたいことも<wbr>わかりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。<wbr>画像を<wbr>つくれたら<wbr>終わり、ではないことも、<wbr>実際の<wbr>仕事を<wbr>通して<wbr>感じてきました。<br>仕事に<wbr>していく<wbr>中で<wbr>大切だと<wbr>思った<wbr>ことを、<wbr>今回の<wbr>内容に<wbr>まとめています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>制作から修正、納品までのことも含まれていますか？</span></p>
-      <p class="qa-a"><b>A</b><span>私自身が制作から修正・編集、納品まで経験してきたことを土台にしています。ただし、お仕事ごとに必要な対応は異なるので、すべての案件で同じように進められるという意味ではありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>制作から<wbr>修正、<wbr>納品までの<wbr>ことも<wbr>含まれていますか？</span></p>
+      <p class="qa-a"><b>A</b><span>私自身が<wbr>制作から<wbr>修正・編集、<wbr>納品まで<wbr>経験してきた<wbr>ことを<wbr>土台に<wbr>しています。<wbr>ただし、<wbr>お仕事ごとに<wbr>必要な<wbr>対応は<wbr>異なるので、<wbr>すべての<wbr>案件で<wbr>同じように<wbr>進められると<wbr>いう<wbr>意味では<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>AI編集は動画編集の仕事だけを目指すものですか？</span></p>
-      <p class="qa-a"><b>A</b><span>AI編集にもいろいろな使い方があります。セットの内容を確認して、ご自身の興味に合わせて学んでいただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>AI編集は<wbr>動画編集の<wbr>仕事だけを<wbr>目指すものですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AI編集にも<wbr>いろいろな<wbr>使い方が<wbr>あります。<wbr>セットの<wbr>内容を<wbr>確認して、<wbr>ご自身の<wbr>興味に<wbr>合わせて<wbr>学んでいただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>仕事にするかは学んでから考えてもいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>もちろんです。最初から答えを出す必要はありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>仕事に<wbr>するかは<wbr>学んでから<wbr>考えても<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。<wbr>最初から<wbr>答えを<wbr>出す必要は<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>自分の感性を活かすって、どういうことですか？</span></p>
-      <p class="qa-a"><b>A</b><span>好きだと思う色や雰囲気、つくってみたい世界を大切にすることも、その入口だと思います。<br>仕事にするかどうかは、その先で考えていただけます。</span></p>
+      <p class="qa-q"><b>Q</b><span>自分の<wbr>感性を<wbr>活か<wbr>すって、<wbr>どう<wbr>いう<wbr>ことですか？</span></p>
+      <p class="qa-a"><b>A</b><span>好きだと<wbr>思う<wbr>色や<wbr>雰囲気、<wbr>つくってみたい<wbr>世界を<wbr>大切に<wbr>する<wbr>ことも、<wbr>その<wbr>入口だと<wbr>思います。<br>仕事に<wbr>するか<wbr>どうかは、<wbr>その先で<wbr>考えていただけます。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>私の『好き』が、仕事につながるなんてまだ想像できません。</span></p>
-      <p class="qa-a"><b>A</b><span>すぐに想像できなくても自然だと思います。私自身も未経験からのスタートでした。まずは、好きなものをつくる楽しさと、その先の仕事で求められることの両方を知っていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>私の<wbr>『好き』が、<wbr>仕事に<wbr>つながるなんてまだ<wbr>想像できません。</span></p>
+      <p class="qa-a"><b>A</b><span>すぐに<wbr>想像できなくても<wbr>自然だと<wbr>思います。<wbr>私自身も<wbr>未経験からの<wbr>スタートでした。<wbr>まずは、<wbr>好きな<wbr>ものを<wbr>つくる<wbr>楽しさと、<wbr>その先の<wbr>仕事で<wbr>求められる<wbr>ことの<wbr>両方を<wbr>知っていただきたいです。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s9">ほかとの違い</h2>
+  <h2 class="sect" id="s9">ほかとの<wbr>違い</h2>
   <ul class="honne">
-    <li>「ネットで調べれば、わかるんじゃない？」</li>
-    <li>「無料でもできそうだけど」</li>
-    <li>「2つって、何が違うの？」</li>
-    <li>「結局、何を買うの？」</li>
+    <li>「ネットで<wbr>調べれば、<wbr>わかるんじゃない？」</li>
+    <li>「無料でも<wbr>できそうだけど」</li>
+    <li>「2つって、<wbr>何が<wbr>違うの？」</li>
+    <li>「結局、<wbr>何を<wbr>買うの？」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>みゅうさんも未経験から始めたんですか？</span></p>
-      <p class="qa-a"><b>A</b><span>はい。私も未経験からのスタートでした。だからこそ、最初に知っておきたかったことを大切にしています。</span></p>
+      <p class="qa-q"><b>Q</b><span>みゅうさんも<wbr>未経験から<wbr>始めたんですか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。<wbr>私も<wbr>未経験からの<wbr>スタートでした。<wbr>だから<wbr>こそ、<wbr>最初に<wbr>知って<wbr>おきたかった<wbr>ことを<wbr>大切に<wbr>しています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>ネットで調べれば情報は見つかりますよね？</span></p>
-      <p class="qa-a"><b>A</b><span>本当にそうだと思います。今回大切にしたのは、調べて集めた情報だけではなく、私自身の原体験や実際のお仕事の中で学んだことです。</span></p>
+      <p class="qa-q"><b>Q</b><span>ネットで<wbr>調べれば<wbr>情報は<wbr>見つかりますよね？</span></p>
+      <p class="qa-a"><b>A</b><span>本当に<wbr>そうだと<wbr>思います。<wbr>今回大切に<wbr>したのは、<wbr>調べて<wbr>集めた<wbr>情報だけではなく、<wbr>私自身の<wbr>原体験や<wbr>実際の<wbr>お仕事の<wbr>中で<wbr>学んだ<wbr>ことです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>無料でできることとの違いは何ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>画像や動画を無料からつくれる時代になりました。今回の内容は、つくれた先にお仕事にしていく中で大切なことをまとめています。</span></p>
+      <p class="qa-q"><b>Q</b><span>無料で<wbr>できる<wbr>こととの<wbr>違いは<wbr>何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>画像や<wbr>動画を<wbr>無料から<wbr>つくれる<wbr>時代に<wbr>なりました。<wbr>今回の<wbr>内容は、<wbr>つくれた<wbr>先に<wbr>お仕事に<wbr>していく<wbr>中で<wbr>大切な<wbr>ことを<wbr>まとめています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>2つの商品の違いは何ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>「AIアーティスト＆クリエイターのはじめ方」は、AIクリエイティブを仕事にしていくための考え方や進め方を学ぶ内容です。<br>「AI編集のはじめ方」はAI編集について学ぶ内容です。今回のセットには両方が含まれています。</span></p>
+      <p class="qa-q"><b>Q</b><span>2つの<wbr>商品の<wbr>違いは<wbr>何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>「AIアーティスト＆クリエイターの<wbr>はじめ方」は、<wbr>AIクリエイティブを<wbr>仕事に<wbr>していく<wbr>ための<wbr>考え方<wbr>や<wbr>進め方を<wbr>学ぶ内容です。<br>「AI編集の<wbr>はじめ方」は<wbr>AI編集に<wbr>ついて<wbr>学ぶ内容です。<wbr>今回の<wbr>セットには<wbr>両方が<wbr>含まれています。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>何を買うのか、一言で知りたいです。</span></p>
-      <p class="qa-a"><b>A</b><span>AI画像や動画をつくれた先に、クリエイティブをお仕事にしていくうえで大切なことを、私の経験からまとめた買い切りの商品です。</span></p>
+      <p class="qa-q"><b>Q</b><span>何を<wbr>買うのか、<wbr>一言で<wbr>知りたいです。</span></p>
+      <p class="qa-a"><b>A</b><span>AI画像や<wbr>動画を<wbr>つくれた<wbr>先に、<wbr>クリエイティブを<wbr>お仕事に<wbr>していく<wbr>うえで<wbr>大切な<wbr>ことを、<wbr>私の<wbr>経験から<wbr>まとめた<wbr>買い<wbr>切りの<wbr>商品です。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s10">購入前に知っておきたいこと</h2>
+  <h2 class="sect" id="s10">購入前に<wbr>知って<wbr>おきたい<wbr>こと</h2>
   <ul class="honne">
-    <li>「パソコン、持ってないんだけど」</li>
-    <li>「あとからお金がかかるのは嫌だな」</li>
-    <li>「買ったあと、ちゃんと見られるのかな」</li>
-    <li>「質問って、どこまでしていいの？」</li>
+    <li>「パソコン、<wbr>持ってないんだけど」</li>
+    <li>「あとから<wbr>お金が<wbr>かかるのは<wbr>嫌だな」</li>
+    <li>「買った<wbr>あと、<wbr>ちゃんと<wbr>見られるのかな」</li>
+    <li>「質問って、<wbr>どこまでしていいの？」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>パソコンは必要ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>ChatGPTなどスマートフォンから使えるツールもあります。ただし、取り組む制作や使うツールによってはパソコンが必要な場合もあります。<br>すべてスマートフォンだけで完結するとお約束するものではありません。</span></p>
+      <p class="qa-q"><b>Q</b><span>パソコンは<wbr>必要ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>ChatGPTなどスマートフォンから<wbr>使える<wbr>ツールも<wbr>あります。<wbr>ただし、<wbr>取り組む<wbr>制作や<wbr>使う<wbr>ツールに<wbr>よっては<wbr>パソコンが<wbr>必要な<wbr>場合も<wbr>あります。<br>すべて<wbr>スマートフォンだけで<wbr>完結するとお約束する<wbr>ものでは<wbr>ありません。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>スマートフォンだけで全部できますか？</span></p>
-      <p class="qa-a"><b>A</b><span>できることもありますが、すべてではありません。必要な環境は取り組む内容によって変わります。</span></p>
+      <p class="qa-q"><b>Q</b><span>スマートフォンだけで<wbr>全部<wbr>できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>できることもありますが、<wbr>すべてでは<wbr>ありません。<wbr>必要な<wbr>環境は<wbr>取り組む内容に<wbr>よって<wbr>変わります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>スマートフォンやタブレットでも見られますか？</span></p>
-      <p class="qa-a"><b>A</b><span>内容を見ることと、実際に制作することでは必要な環境が違います。閲覧できる端末や、各制作に必要な環境は、購入前に確認できるようにご案内します。</span></p>
+      <p class="qa-q"><b>Q</b><span>スマートフォンや<wbr>タブレットでも<wbr>見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>内容を<wbr>見る<wbr>ことと、<wbr>実際に<wbr>制作する<wbr>ことでは<wbr>必要な<wbr>環境が<wbr>違います。<wbr>閲覧できる<wbr>端末や、<wbr>各制作に<wbr>必要な<wbr>環境は、<wbr>購入前に<wbr>確認できるように<wbr>ご案内します。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>AIツールに別料金はかかりますか？</span></p>
-      <p class="qa-a"><b>A</b><span>ChatGPTやMuseなど、無料から始められるものもあります。一部の機能や利用量によっては、外部ツールの有料プランが必要になる場合があります。</span></p>
+      <p class="qa-q"><b>Q</b><span>AIツールに<wbr>別料金は<wbr>かかりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>ChatGPTや<wbr>Museなど、<wbr>無料から<wbr>始められる<wbr>ものも<wbr>あります。<wbr>一部の<wbr>機能や<wbr>利用量に<wbr>よっては、<wbr>外部<wbr>ツールの<wbr>有料プランが<wbr>必要になる<wbr>場合が<wbr>あります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>商品に月額料金はかかりますか？</span></p>
-      <p class="qa-a"><b>A</b><span>今回の商品は買い切りで、商品自体に追加の月額料金はありません。外部の有料ツールの費用は別になります。</span></p>
+      <p class="qa-q"><b>Q</b><span>商品に<wbr>月額料金は<wbr>かかりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>今回の<wbr>商品は<wbr>買い<wbr>切りで、<wbr>商品自体に<wbr>追加の<wbr>月額料金は<wbr>ありません。<wbr>外部の<wbr>有料ツールの<wbr>費用は<wbr>別に<wbr>なります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>何度でも見られますか？</span></p>
-      <p class="qa-a"><b>A</b><span>一度ご購入いただければ繰り返しご覧いただける形です。閲覧できる期間や提供条件については、正式な利用条件をご確認ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>何度でも<wbr>見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>一度<wbr>ご購入いただければ<wbr>繰り返しご覧いただける<wbr>形です。<wbr>閲覧できる<wbr>期間や<wbr>提供条件に<wbr>ついては、<wbr>正式な<wbr>利用条件を<wbr>ご確認ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>一度購入したら、いつまで見られますか？</span></p>
-      <p class="qa-a"><b>A</b><span>繰り返しご覧いただける内容です。ただし、無期限の提供を保証するかどうかは正式な利用条件によります。<br>閲覧期間やサービスの提供条件は、購入前にご確認ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>一度<wbr>購入したら、<wbr>いつまで<wbr>見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>繰り返しご覧いただける<wbr>内容です。<wbr>ただし、<wbr>無期限の<wbr>提供を<wbr>保証するか<wbr>どうかは<wbr>正式な<wbr>利用条件に<wbr>よります。<br>閲覧期間や<wbr>サービスの<wbr>提供条件は、<wbr>購入前に<wbr>ご確認ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>お便り便って何ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>商品についての質問や、内容の更新に関するご案内のために用意しているものです。対応方法や範囲はご案内に沿ってご利用ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>お便り<wbr>便って<wbr>何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>商品に<wbr>ついての<wbr>質問や、<wbr>内容の<wbr>更新に<wbr>関する<wbr>ご案内の<wbr>ために<wbr>用意している<wbr>ものです。<wbr>対応方<wbr>法や<wbr>範囲は<wbr>ご案内に<wbr>沿って<wbr>ご利用ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>質問はどこまでできますか？</span></p>
-      <p class="qa-a"><b>A</b><span>商品の内容についての質問を想定しています。個別の制作代行やお仕事の紹介をお約束するものではありません。<br>詳しい範囲は正式な案内で明確にします。</span></p>
+      <p class="qa-q"><b>Q</b><span>質問は<wbr>どこまで<wbr>できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>商品の<wbr>内容に<wbr>ついての<wbr>質問を<wbr>想定しています。<wbr>個別の<wbr>制作代行や<wbr>お仕事の<wbr>紹介を<wbr>お約束する<wbr>ものでは<wbr>ありません。<br>詳しい<wbr>範囲は<wbr>正式な<wbr>案内で<wbr>明確にします。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>お便り便では、どんな質問ができますか？</span></p>
-      <p class="qa-a"><b>A</b><span>今回の内容についてご質問を受け付けるために、お便り便をご用意しています。個別添削や仕事の相談などが含まれるか、回答方法や対応範囲は別途明確にご案内します。</span></p>
+      <p class="qa-q"><b>Q</b><span>お便り便では、<wbr>どんな<wbr>質問が<wbr>できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>今回の<wbr>内容に<wbr>ついて<wbr>ご質問を<wbr>受け付ける<wbr>ために、<wbr>お便り便を<wbr>ご用意しています。<wbr>個別添削や<wbr>仕事の<wbr>相談などが<wbr>含まれるか、<wbr>回答方<wbr>法や<wbr>対応範囲は<wbr>別途明確に<wbr>ご案内します。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>内容は更新されますか？</span></p>
-      <p class="qa-a"><b>A</b><span>更新に関するご案内は、お便り便でお知らせする予定です。更新の頻度や内容を保証するものではないため、現時点で含まれる内容を基準にご検討ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>内容は<wbr>更新されますか？</span></p>
+      <p class="qa-a"><b>A</b><span>更新に<wbr>関する<wbr>ご案内は、<wbr>お便り便で<wbr>お知らせする<wbr>予定です。<wbr>更新の<wbr>頻度や<wbr>内容を<wbr>保証する<wbr>ものではないため、<wbr>現時点で<wbr>含まれる<wbr>内容を<wbr>基準に<wbr>ご検討ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>内容が更新された場合はどうなりますか？</span></p>
-      <p class="qa-a"><b>A</b><span>商品の更新については、お便り便でご案内する予定です。更新の対象範囲や追加費用の有無は、実際の提供条件に合わせて明確にお伝えします。</span></p>
+      <p class="qa-q"><b>Q</b><span>内容が<wbr>更新された<wbr>場合は<wbr>どうなりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>商品の<wbr>更新に<wbr>ついては、<wbr>お便り便で<wbr>ご案内する<wbr>予定です。<wbr>更新の<wbr>対象範囲や<wbr>追加費用の<wbr>有無は、<wbr>実際の<wbr>提供条件に<wbr>合わせて<wbr>明確に<wbr>お伝えします。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>購入後はどうやって見られますか？</span></p>
-      <p class="qa-a"><b>A</b><span>購入後の案内に沿ってご覧いただく形です。具体的な受け取り方法やログイン手順は、購入ページの正式な案内をご確認ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>購入後は<wbr>どうやって<wbr>見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>購入後の<wbr>案内に<wbr>沿って<wbr>ご覧いただく<wbr>形です。<wbr>具体的な<wbr>受け取り方<wbr>法や<wbr>ログイン手順は、<wbr>購入ページの<wbr>正式な<wbr>案内を<wbr>ご確認ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>購入後は、まず何をすればいいですか？</span></p>
-      <p class="qa-a"><b>A</b><span>購入後の案内に沿って内容をご覧いただき、まずは興味のあるところから確認していただけたらと思います。<br>実際の閲覧手順は、購入後のご案内をご確認ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>購入後は、<wbr>まず<wbr>何を<wbr>すれば<wbr>いいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>購入後の<wbr>案内に<wbr>沿って<wbr>内容を<wbr>ご覧いただき、<wbr>まずは<wbr>興味の<wbr>ある<wbr>ところから<wbr>確認していただけたらと<wbr>思います。<br>実際の<wbr>閲覧手順は、<wbr>購入後の<wbr>ご案内を<wbr>ご確認ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>仕事につながる保証はありますか？</span></p>
-      <p class="qa-a"><b>A</b><span>お仕事や収入を保証するものではありません。実際の経験をもとに、仕事にしていくために大切なことを学んでいただく商品です。</span></p>
+      <p class="qa-q"><b>Q</b><span>仕事に<wbr>つながる<wbr>保証は<wbr>ありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>お仕事や<wbr>収入を<wbr>保証する<wbr>ものでは<wbr>ありません。<wbr>実際の<wbr>経験を<wbr>もとに、<wbr>仕事に<wbr>していく<wbr>ために<wbr>大切な<wbr>ことを<wbr>学んでいただく<wbr>商品です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>購入後のキャンセルや返金はできますか？</span></p>
-      <p class="qa-a"><b>A</b><span>大切なことなので、お申し込み前に必ず確認していただきたいです。キャンセルや返金は、販売ページに記載された利用規約に沿って取り扱います。</span></p>
+      <p class="qa-q"><b>Q</b><span>購入後の<wbr>キャンセルや<wbr>返金は<wbr>できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>大切な<wbr>ことなので、<wbr>お申し込み前に<wbr>必ず<wbr>確認していただきたいです。<wbr>キャンセルや<wbr>返金は、<wbr>販売ページに<wbr>記載された<wbr>利用規約に<wbr>沿って<wbr>取り扱います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>支払い方法と購入後の案内はどこで確認できますか？</span></p>
-      <p class="qa-a"><b>A</b><span>利用できるお支払い方法は購入フォームで確認できます。購入後の案内を受け取れるよう、入力するメールアドレスと受信設定もご確認ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>支払い方<wbr>法と<wbr>購入後の<wbr>案内は<wbr>どこで<wbr>確認できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>利用できる<wbr>お支払い方<wbr>法は<wbr>購入フォームで<wbr>確認できます。<wbr>購入後の<wbr>案内を<wbr>受け取れる<wbr>よう、<wbr>入力する<wbr>メールアドレスと<wbr>受信設定も<wbr>ご確認ください。</span></p>
     </div>
 
   </div>
 
-  <h2 class="sect" id="s11">購入を決める前に</h2>
+  <h2 class="sect" id="s11">購入を<wbr>決める<wbr>前に</h2>
   <ul class="honne">
-    <li>「本当に私に必要なのかな」</li>
-    <li>「買って後悔したくない」</li>
-    <li>「他にもっと良いものがあるかも」</li>
-    <li>「もう少し様子を見たい」</li>
+    <li>「本当に<wbr>私に<wbr>必要なのかな」</li>
+    <li>「買って<wbr>後悔したくない」</li>
+    <li>「他に<wbr>もっと<wbr>良い<wbr>ものが<wbr>あるかも」</li>
+    <li>「もう<wbr>少し<wbr>様子を<wbr>見たい」</li>
   </ul>
   <div class="qa">
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>今の自分にはまだ早いでしょうか？</span></p>
-      <p class="qa-a"><b>A</b><span>未経験の方にも知っていただきたい内容です。ただ、今必要だと感じるかどうかは、ご自身の気持ちを大切にしていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>今の<wbr>自分には<wbr>まだ<wbr>早いでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>未経験の<wbr>方にも<wbr>知っていただきたい<wbr>内容です。<wbr>ただ、<wbr>今必要だと<wbr>感じるか<wbr>どうかは、<wbr>ご自身の<wbr>気持ちを<wbr>大切に<wbr>していただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>他にもっと良い方法がある気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>いろいろな学び方があるので、比べたくなるのは自然だと思います。今回の内容は、AI画像や動画をつくれた先のことをまとめたものです。<br>その部分を知りたいと思えるかで、選んでいただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>他に<wbr>もっと<wbr>良い<wbr>方<wbr>法が<wbr>ある<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>いろいろな<wbr>学び方が<wbr>あるので、<wbr>比べたくなるのは<wbr>自然だと<wbr>思います。<wbr>今回の<wbr>内容は、<wbr>AI画像や<wbr>動画を<wbr>つくれた<wbr>先の<wbr>ことを<wbr>まとめた<wbr>ものです。<br>その<wbr>部分を<wbr>知りたいと<wbr>思えるかで、<wbr>選んでいただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>購入前に内容を詳しく確認できますか？</span></p>
-      <p class="qa-a"><b>A</b><span>内容や目次、提供条件をご確認いただいたうえで判断していただきたいと思っています。<br>公開されている案内を見て、気になる点はご質問ください。</span></p>
+      <p class="qa-q"><b>Q</b><span>購入前に<wbr>内容を<wbr>詳しく<wbr>確認できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>内容や<wbr>目次、<wbr>提供条件を<wbr>ご確認いただいたうえで<wbr>判断していただきたいと<wbr>思っています。<br>公開されている<wbr>案内を<wbr>見て、<wbr>気に<wbr>なる点は<wbr>ご質問ください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>もし自分に合わなかったらどうしよう。</span></p>
-      <p class="qa-a"><b>A</b><span>そう思うのも自然なことだと思います。どんなことを学べるか、何が含まれないかまで確認してから決めていただきたいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>もし<wbr>自分に<wbr>合わなかったら<wbr>どうしよう。</span></p>
+      <p class="qa-a"><b>A</b><span>そう<wbr>思うのも<wbr>自然な<wbr>ことだと<wbr>思います。<wbr>どんな<wbr>ことを<wbr>学べるか、<wbr>何が<wbr>含まれないかまで<wbr>確認してから<wbr>決めて<wbr>いただきたいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>一度選んだら、もう戻れない気がします。</span></p>
-      <p class="qa-a"><b>A</b><span>そんなことはないと思います。学んでみて違うと思ったら、別の道を選んでもいいんです。<br>今回の内容も、選択肢のひとつとして考えていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>一度<wbr>選んだら、<wbr>もう<wbr>戻れない<wbr>気が<wbr>します。</span></p>
+      <p class="qa-a"><b>A</b><span>そんな<wbr>ことはないと<wbr>思います。<wbr>学んで<wbr>みて<wbr>違うと<wbr>思ったら、<wbr>別の<wbr>道を<wbr>選んでも<wbr>いいんです。<br>今回の<wbr>内容も、<wbr>選択肢の<wbr>ひとつと<wbr>して<wbr>考えていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>始めるタイミングがわかりません。</span></p>
-      <p class="qa-a"><b>A</b><span>焦って決める必要はありません。ただ、完璧なタイミングを待っていると、なかなか来ないこともあります。<br>気になっている今の気持ちを、大切にしていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>始める<wbr>タイミングが<wbr>わかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>焦って<wbr>決める<wbr>必要は<wbr>ありません。<wbr>ただ、<wbr>完璧な<wbr>タイミングを<wbr>待っていると、<wbr>なかなか<wbr>来ない<wbr>こともあります。<br>気に<wbr>なっている<wbr>今の<wbr>気持ちを、<wbr>大切に<wbr>していただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>決めるのを、つい先延ばしにしてしまいます。</span></p>
-      <p class="qa-a"><b>A</b><span>大事なことほど、迷ってしまいますよね。急がなくて大丈夫です。内容を確認して、納得できたときに決めていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>決めるのを、<wbr>つい<wbr>先延ばしに<wbr>してしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>大事な<wbr>ことほど、<wbr>迷ってしまいますよね。<wbr>急が<wbr>なくて<wbr>大丈夫です。<wbr>内容を<wbr>確認して、<wbr>納得できた<wbr>ときに<wbr>決めて<wbr>いただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>誰かに背中を押してほしいです。</span></p>
-      <p class="qa-a"><b>A</b><span>その気持ち、よくわかります。でも、無理に背中を押すことはしたくないと思っています。<br>ご自身が「やってみたい」と思えたときが、いちばんいいタイミングです。</span></p>
+      <p class="qa-q"><b>Q</b><span>誰かに<wbr>背中を<wbr>押して<wbr>ほしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その<wbr>気持ち、<wbr>よく<wbr>わかります。<wbr>でも、<wbr>無理に<wbr>背中を<wbr>押すことは<wbr>したくないと<wbr>思っています。<br>ご自身が<wbr>「やってみたい」と<wbr>思えた<wbr>ときが、<wbr>いちばんいい<wbr>タイミングです。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>失敗してもいいよ、と言ってほしいです。</span></p>
-      <p class="qa-a"><b>A</b><span>失敗しても大丈夫です。うまくいかなかったことも、次につくるときの材料になります。</span></p>
+      <p class="qa-q"><b>Q</b><span>失敗しても<wbr>いいよ、<wbr>と<wbr>言って<wbr>ほしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>失敗しても<wbr>大丈夫です。<wbr>うまく<wbr>いかなかったことも、<wbr>次に<wbr>つくる<wbr>ときの<wbr>材料に<wbr>なります。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>始める前に、正解を知っておきたいです。</span></p>
-      <p class="qa-a"><b>A</b><span>正解がわかってから始めたい気持ち、わかります。ただ、つくる分野には一つの正解があるわけではありません。<br>試しながら、自分なりの答えを見つけていけたらいいと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>始める<wbr>前に、<wbr>正解を<wbr>知って<wbr>おきたいです。</span></p>
+      <p class="qa-a"><b>A</b><span>正解が<wbr>わかってから<wbr>始めたい<wbr>気持ち、<wbr>わかります。<wbr>ただ、<wbr>つくる<wbr>分野には<wbr>一つの<wbr>正解が<wbr>あるわけでは<wbr>ありません。<br>試しながら、<wbr>自分なりの<wbr>答えを<wbr>見つけていけたら<wbr>いいと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>購入を見送るのもありですか？</span></p>
-      <p class="qa-a"><b>A</b><span>もちろんです。今のご自身に必要だと思えるかを大切にしてください。</span></p>
+      <p class="qa-q"><b>Q</b><span>購入を<wbr>見送るのも<wbr>ありですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。<wbr>今の<wbr>ご自身に<wbr>必要だと<wbr>思えるかを<wbr>大切に<wbr>してください。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>私が今すぐ買うべきか、まだ決められません。</span></p>
-      <p class="qa-a"><b>A</b><span>迷っているときは、内容や条件を確認してから考えていただきたいです。興味があることと、今購入することは別の話なので、ご自身の納得を大切にしていただけたらと思います。</span></p>
+      <p class="qa-q"><b>Q</b><span>私が<wbr>今すぐ<wbr>買うべきか、<wbr>まだ<wbr>決められません。</span></p>
+      <p class="qa-a"><b>A</b><span>迷っている<wbr>ときは、<wbr>内容や<wbr>条件を<wbr>確認してから<wbr>考えていただきたいです。<wbr>興味が<wbr>ある<wbr>ことと、<wbr>今購入する<wbr>ことは<wbr>別の<wbr>話なので、<wbr>ご自身の<wbr>納得を<wbr>大切に<wbr>していただけたらと<wbr>思います。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>質問する前に、基本的なことを聞いてもいいのか迷います。</span></p>
-      <p class="qa-a"><b>A</b><span>気になることがあれば、購入前に確認していただきたいです。わからないまま決めなくても大丈夫です。</span></p>
+      <p class="qa-q"><b>Q</b><span>質問する<wbr>前に、<wbr>基本的な<wbr>ことを<wbr>聞いても<wbr>いいのか<wbr>迷います。</span></p>
+      <p class="qa-a"><b>A</b><span>気に<wbr>なることが<wbr>あれば、<wbr>購入前に<wbr>確認していただきたいです。<wbr>わからないまま<wbr>決めなくても<wbr>大丈夫です。</span></p>
     </div>
 
     <div class="qa-item">
-      <p class="qa-q"><b>Q</b><span>最後に、一番知ってほしいことは何ですか？</span></p>
-      <p class="qa-a"><b>A</b><span>AIでできることが増えている今、私が未経験から学び、仕事にしてきたこの分野を、自分の可能性のひとつとして知っていただきたいです。<br>最初から何かを決めなくても、ゆっくり考えていただけたら嬉しいです。</span></p>
+      <p class="qa-q"><b>Q</b><span>最後に、<wbr>一番<wbr>知って<wbr>ほしい<wbr>ことは<wbr>何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AIで<wbr>できる<wbr>ことが<wbr>増えている<wbr>今、<wbr>私が<wbr>未経験から<wbr>学び、<wbr>仕事に<wbr>してきた<wbr>この<wbr>分野を、<wbr>自分の<wbr>可能性の<wbr>ひとつと<wbr>して<wbr>知っていただきたいです。<br>最初から<wbr>何かを<wbr>決めなくても、<wbr>ゆっくり考えていただけたら<wbr>嬉しいです。</span></p>
     </div>
 
   </div>
 
 
   <section class="close">
-    <p class="close-pre">ここまで見てくださった方へ</p>
-    <p class="close-pre2">未経験から学んだことをまとめました</p>
-    <h2 class="close-h">「知って、はじめる」</h2>
-    <p class="close-for">ための<b>2</b>つのコンテンツ</p>
+    <p class="close-pre">ここまで<wbr>見てくださった<wbr>方<wbr>へ</p>
+    <p class="close-pre2">未経験から<wbr>学んだ<wbr>ことを<wbr>まとめました</p>
+    <h2 class="close-h">「知って、<wbr>はじめる」</h2>
+    <p class="close-for">ための<b>2</b>つの<wbr>コンテンツ</p>
 
     <div class="close-card">
       <div class="close-items">
         <div class="close-item">
-          <img decoding="async" width="1280" height="720" src="assets/product/cover.png" alt="AIアーティスト＆クリエイターのはじめ方">
+          <img decoding="async" width="900" height="506" src="assets/product/cover.jpg" alt="AIアーティスト＆クリエイターのはじめ方">
         </div>
         <div class="close-item">
-          <img decoding="async" width="1280" height="720" src="assets/product/cover2.png" alt="AI編集のはじめ方">
+          <img decoding="async" width="900" height="506" src="assets/product/cover2.jpg" alt="AI編集のはじめ方">
         </div>
       </div>
     </div>
 
-    <a class="close-btn" href="https://sub.start-myu.com/p/U82F7naBzIy2">詳細を見る</a>
+    <a class="close-btn" href="https://sub.start-myu.com/p/U82F7naBzIy2">詳細を<wbr>見る</a>
 
-    <p class="close-hand">あなたの挑戦を心から応援しています</p>
+    <p class="close-hand">あなたの<wbr>挑戦を<wbr>心から<wbr>応援しています</p>
     <div class="close-sign" aria-hidden="true"><div class="close-sgw">
       <div class="close-sg"><img src="assets/product/sign.png" alt=""></div>
       <svg class="close-pen" viewBox="-110 -250 240 270" fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(30)"><path d="M0 0L-12 -44Q-13 -54 -9 -60H9Q13 -54 12 -44Z" fill="#fff" stroke="#67645E" stroke-width="3"/><path d="M0 0V-34" stroke="#67645E" stroke-width="2"/><circle cx="0" cy="-36" r="3" fill="#67645E"/><rect x="-13" y="-76" width="26" height="16" rx="3" fill="#fff" stroke="#67645E" stroke-width="3"/><path d="M-17 -76V-214C-17 -232 -8 -236 0 -236C8 -236 17 -232 17 -214V-76Z" fill="#67645E"/><path d="M-17 -96H17" stroke="#ACAAA5" stroke-width="3"/></g></svg>
@@ -1182,15 +1182,5 @@
 
 </div>
 <a class="to-toc" href="#toc">もくじ</a>
-<script src="assets/js/budoux-ja.min.js"></script>
-<script>
-if (!CSS.supports('word-break', 'auto-phrase')) {
-  document.querySelectorAll('.wrap p').forEach(function (p) {
-    var el = document.createElement('budoux-ja');
-    while (p.firstChild) el.appendChild(p.firstChild);
-    p.appendChild(el);
-  });
-}
-</script>
 </body>
 </html>
