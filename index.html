@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>myubasic — 購入前の本音とQ&amp;A</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#FCFAF5">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="myubasic">
+<meta property="og:title" content="myubasic — 作れるようになった先に広がる世界">
+<meta property="og:url" content="https://myubasic.com/paper/story">
+<meta property="og:image" content="https://myubasic.com/assets/brand/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="myubasic — 作れるようになった先に広がる世界">
+<meta name="twitter:image" content="https://myubasic.com/assets/brand/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Rubik:wght@800&family=M+PLUS+Rounded+1c:wght@800&family=Inter:wght@300;500&family=Klee+One:wght@600&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing:border-box; margin:0; padding:0; }
+  :root {
+    --desk:#EEEEEC; --paper:#FFFFFF; --ink:#262626; --text:#3D3D3D; --sub:#8C8C8A; --faint:#B9B9B6;
+    --line:#E4E4E1; --fill:#F4F4F2; --dot:#CFCFCC;
+    --lh:2.1em; --gut:44px;
+  }
+  html { background:var(--desk); -webkit-text-size-adjust:100%; text-size-adjust:100%; overflow-x:clip; scroll-behavior:smooth; scroll-padding-top:12px; }
+  body { font-family:'Zen Kaku Gothic New',"Hiragino Sans",sans-serif; font-weight:500; color:var(--text); background:var(--desk);
+         -webkit-font-smoothing:antialiased; line-break:strict; word-break:auto-phrase; font-size:16px; font-feature-settings:"palt" 0; }
+  .ic, br.pc, br.sp { display:none; }
+
+  /* ---------- 紙 ---------- */
+  .wrap { position:relative; max-width:620px; margin:40px auto 72px; padding:64px var(--gut) 80px; background:var(--paper);
+          box-shadow:0 1px 2px rgba(0,0,0,0.04), 0 18px 40px rgba(0,0,0,0.06); }
+  /* メモパッドのミシン目 */
+  .wrap::before { content:""; position:absolute; left:0; right:0; top:0; height:26px;
+                  background:radial-gradient(circle at 50% 50%, var(--desk) 3.2px, transparent 3.8px) 6px 50% / 16px 26px repeat-x;
+                  border-bottom:1px dashed var(--line); }
+
+  /* ---------- 表紙 ---------- */
+  h1 { font-weight:700; font-size:25px; line-height:1.55; letter-spacing:0.06em; color:var(--ink);
+       padding-bottom:22px; border-bottom:1px solid var(--ink); }
+
+  .lead { font-size:16px; line-height:2.1; letter-spacing:0.04em; text-wrap:pretty; }
+  /* 本文にも回答と同じ点線の罫線 */
+  .lead { background-image:linear-gradient(to right, var(--paper) 50%, transparent 50%),
+                           linear-gradient(to bottom, transparent calc(100% - 1px), var(--dot) calc(100% - 1px));
+          background-size:4px 100%, 100% 2.1em; }
+  .lead.s1-cont, .qa-bold { background-image:none; }
+  .qa-msg .lead { background-image:linear-gradient(to right, var(--fill) 50%, transparent 50%),
+                                   linear-gradient(to bottom, transparent calc(100% - 1px), var(--dot) calc(100% - 1px)); }
+  .lead + .lead { margin-top:1.1em; }
+  .qa-intro { margin-top:40px; }
+  .qa-intro + .lead { margin-top:1.8em; }
+
+  /* ---------- 目次（見本2のA：本文と同じ点線のノート、番号は細い丸） ---------- */
+  .qa-toc { margin:100px 0 0; padding:0; list-style:none; counter-reset:toc; position:relative; }
+  .qa-toc::before { content:"もくじ"; position:absolute; left:0; right:0; top:-58px; text-align:center;
+                    font-family:'Zen Kaku Gothic New',sans-serif; font-weight:700; font-size:17px; letter-spacing:0.24em; color:#67645E; }
+  .qa-toc li { counter-increment:toc; border-bottom:1px dashed var(--dot); }
+  .qa-toc a { position:relative; display:block; padding:14px 2px 14px 44px; color:var(--text); text-decoration:none;
+              font-weight:500; font-size:15.5px; line-height:1.6; letter-spacing:0.04em; }
+  .qa-toc a::before { content:counter(toc, decimal-leading-zero); position:absolute; left:2px; top:50%; width:28px; height:28px; margin-top:-14px;
+                      display:flex; align-items:center; justify-content:center; border:1px solid var(--faint); border-radius:50%;
+                      font-family:'Jost',sans-serif; font-weight:400; font-size:12px; letter-spacing:0; color:var(--sub); }
+
+  .toc-note { margin-top:12px; text-align:right; font-size:12px; line-height:1.7; letter-spacing:0.04em; color:var(--sub); }
+
+  /* ---------- 章見出し ---------- */
+  h2.sect { position:relative; margin:96px 0 30px; padding:0 0 16px; color:var(--ink); font-weight:700; font-size:21px;
+            line-height:1.6; letter-spacing:0.06em; border-bottom:3px double var(--dot); }
+  h2.sect::before { display:block; margin-bottom:6px; font-family:'Jost',sans-serif; font-weight:200; font-size:46px; line-height:1;
+                    letter-spacing:0.02em; color:var(--faint); }
+  #s1::before{content:"01"} #s2::before{content:"02"} #s3::before{content:"03"} #s4::before{content:"04"}
+  #s5::before{content:"05"} #s6::before{content:"06"} #s7::before{content:"07"} #s8::before{content:"08"}
+  #s9::before{content:"09"} #s10::before{content:"10"} #s11::before{content:"11"}
+
+  /* ---------- 01の小見出しと案内 ---------- */
+  p.sect { margin:40px 0 16px; font-weight:700; font-size:17.5px; line-height:1.75; letter-spacing:0.05em; color:var(--ink); }
+  p.sect::before { content:""; display:block; width:22px; height:1px; margin-bottom:12px; background:var(--ink); }
+  .intro-frame { margin:60px 0 64px; padding:32px 26px 30px; border:1px solid var(--faint); border-radius:4px; }
+  .intro-frame .honne { margin-bottom:0; }
+  .intro-frame.s1-frame { margin-top:0; margin-bottom:20px; }
+  .intro-frame.s1-frame + .intro-frame { margin-top:20px; }
+  .intro-frame .s1-honne { margin-bottom:30px; }
+  p.sect.sect-band { display:table; margin-top:0; margin-bottom:36px; padding:6px 16px; background:#6B5233; color:#fff; border-radius:3px; }
+  p.sect.sect-band::before { display:none; }
+  .qa-bold { font-weight:700; color:var(--ink); padding:16px 20px; background:var(--fill); border-radius:12px; }
+  .qa-msg { position:relative; margin:48px 0 0; padding:28px 24px 64px; background:var(--fill); border-radius:16px; }
+  /* 右下に手書き風のペン */
+  .qa-msg::after { content:""; position:absolute; right:18px; bottom:14px; width:58px; height:51px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2056%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22w%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22120%25%22%20height%3D%22120%25%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.05%22%20numOctaves%3D%222%22%20seed%3D%224%22/%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20scale%3D%221.8%22/%3E%3C/filter%3E%3C/defs%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%238C8C8A%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20filter%3D%22url%28%23w%29%22%3E%3Cg%20transform%3D%22translate%2826%2038%29%20rotate%28-42%29%22%3E%3Cpath%20d%3D%22M9%20-4.5%20L35%20-4.5%20Q40%20-4.5%2040%200%20Q40%204.5%2035%204.5%20L9%204.5%20Z%22/%3E%3Cpath%20d%3D%22M15%20-4.5%20L15%204.5%20M18%20-4.5%20L18%204.5%22/%3E%3Cpath%20d%3D%22M9%20-4.5%20L0%200%20L9%204.5%22/%3E%3Cpath%20d%3D%22M0%200%20L5%200%22/%3E%3Cpath%20d%3D%22M26%20-4.5%20L33%20-7.5%20L34%20-4.5%22/%3E%3C/g%3E%3Cpath%20d%3D%22M25%2039%20C21%2044%2016%2041%2012%2046%20C9%2050%205%2047%203%2050%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
+  .qa-msg p.sect:first-child { margin-top:0; }
+  .lead.dashed { position:relative; padding-left:1.6em; }
+  .lead.dashed::before { content:""; position:absolute; left:0.1em; top:0.68em; width:0.72em; height:0.72em; border:1px solid var(--ink); border-radius:2px; background:var(--paper); }
+  .lead + .lead.dashed { margin-top:1.1em; }
+  .lead.dashed + .lead.dashed { margin-top:0.3em; }
+  .lead.dashed + .lead:not(.dashed) { margin-top:1.1em; }
+  .qa-lead { margin-bottom:22px; }
+
+  /* ---------- 01の冒頭：本音は吹き出し、答えはQ&Aと同じ形 ---------- */
+  .s1-honne { margin:0 0 30px; }
+  .s1-a { margin-top:8px; }
+  .s1-a b { background:none !important; border:1px solid var(--faint); color:var(--sub) !important; }
+  .lead.s1-cont { margin-top:10px; padding-left:40px; }
+  .lead.s1-cont + .lead.s1-cont { margin-top:0; }
+  .lead.s1-cont span { display:block; text-wrap:pretty;
+                       background-image:linear-gradient(to right, var(--paper) 50%, transparent 50%),
+                                        linear-gradient(to bottom, transparent calc(100% - 1px), var(--dot) calc(100% - 1px));
+                       background-size:4px 100%, 100% var(--lh); }
+  @media (max-width:640px){ .lead.s1-cont { padding-left:36px; } }
+
+  /* ---------- 本音のひとこと（吹き出し） ---------- */
+  .honne { display:flex; flex-direction:column; gap:14px; margin:0 0 36px; padding:0; list-style:none; }
+  .honne li { position:relative; width:fit-content; max-width:88%; padding:10px 18px; border-radius:18px 18px 18px 4px;
+              background:var(--fill); font-family:'Klee One',cursive; font-weight:600; font-size:15.5px; line-height:1.85;
+              letter-spacing:0.03em; color:#555; }
+  .honne li:nth-child(even) { align-self:flex-end; border-radius:18px 18px 4px 18px; }
+
+  /* ---------- Q&A ---------- */
+  .qa-item { padding:26px 0 24px; border-bottom:1px solid var(--line); }
+  .qa-item:first-child { padding-top:4px; }
+  .qa-item:last-child { border-bottom:0; }
+  .qa-q, .qa-a { display:flex; gap:14px; }
+  .qa-q b, .qa-a b { flex:0 0 26px; height:26px; display:flex; align-items:center; justify-content:center; border-radius:50%;
+                     font-family:'Jost',sans-serif; font-weight:400; font-size:13px; letter-spacing:0; }
+  .qa-q { font-weight:700; font-size:16.5px; line-height:1.75; letter-spacing:0.04em; color:var(--ink); }
+  .qa-q b { margin-top:1px; background:var(--ink); color:#fff; }
+  .qa-a { margin-top:12px; font-size:16px; line-height:var(--lh); letter-spacing:0.04em; }
+  .qa-a b { margin-top:calc((var(--lh) - 26px) / 2); border:1px solid var(--faint); color:var(--sub); }
+  /* 点線の罫線 */
+  .qa-a span { flex:1; min-width:0; text-wrap:pretty;
+               background-image:linear-gradient(to right, var(--paper) 50%, transparent 50%),
+                                linear-gradient(to bottom, transparent calc(100% - 1px), var(--dot) calc(100% - 1px));
+               background-size:4px 100%, 100% var(--lh); }
+
+  /* ---------- 最後のご案内 ---------- */
+  .cta { margin:96px calc(var(--gut) * -1) 0; padding:64px var(--gut) 64px; background:var(--fill); text-align:center; }
+  .cta::before { content:none; display:block; margin-bottom:22px; font-family:'Jost',sans-serif; font-size:11px; letter-spacing:0.42em; color:var(--sub); }
+  .cta-h { font-weight:700; font-size:21px; line-height:1.75; letter-spacing:0.06em; color:var(--ink); }
+  .cta-sub { margin-top:26px; padding-top:26px; border-top:1px solid var(--dot); font-size:15.5px; line-height:2.1; letter-spacing:0.04em; }
+  .cta-time { display:block; margin-top:18px; font-size:14px; line-height:2; color:var(--sub); }
+  .nb { white-space:nowrap; }
+  .marker { background:linear-gradient(to top, #DCDCD9 36%, transparent 36%); font-weight:700; color:var(--ink); padding:0 2px; }
+  .excl { display:inline-block; transform:skewX(-12deg); }
+  .cta-img { margin:40px auto 0; max-width:420px; padding:12px 12px 40px; background:#fff; box-shadow:0 10px 28px rgba(0,0,0,0.08); }
+  .cta-img img { width:100%; height:auto; display:block; filter:grayscale(1); }
+
+  /* ---------- もくじへ ---------- */
+  .to-toc { position:fixed; right:16px; bottom:18px; z-index:10; display:flex; align-items:center; gap:8px; padding:10px 16px 10px 14px;
+            border-radius:999px; background:rgba(38,38,38,0.88); color:#fff; font-size:12px; letter-spacing:0.12em; text-decoration:none;
+            -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); box-shadow:0 6px 16px rgba(0,0,0,0.18); }
+  .to-toc::before { content:""; width:10px; height:8px; border-top:1px solid #fff; border-bottom:1px solid #fff;
+                    background:linear-gradient(#fff,#fff) 0 50% / 100% 1px no-repeat; }
+
+  @media (max-width:640px){
+    :root { --gut:22px; }
+    .wrap { margin:0; padding-top:56px; box-shadow:none; }
+    h1 { font-size:21px; }
+    .lead, .qa-a { font-size:15.5px; }
+    .qa-q { font-size:16px; }
+    .qa-q, .qa-a { gap:12px; }
+    .qa-q b, .qa-a b { flex-basis:24px; height:24px; font-size:12px; }
+    .qa-a b { margin-top:calc((var(--lh) - 24px) / 2); }
+    .qa-toc { margin-top:92px; }
+    .qa-toc a { font-size:15px; }
+    h2.sect { margin:80px 0 26px; font-size:19px; }
+    h2.sect::before { font-size:40px; }
+    p.sect { font-size:16.5px; }
+    .intro-frame { margin-left:-6px; margin-right:-6px; padding:26px 18px 24px; }
+    .intro-frame .qa-msg { margin-left:0; margin-right:0; padding-left:18px; padding-right:18px; }
+    .qa-msg { margin-left:-6px; margin-right:-6px; padding:24px 20px 58px; }
+    .qa-msg::after { right:14px; bottom:12px; width:50px; height:44px; }
+    .honne li { font-size:14.5px; padding:9px 16px; }
+    .cta { margin-top:80px; padding:56px var(--gut); }
+    .cta-h { font-size:19px; }
+    .cta-sub { font-size:14.5px; }
+    .cta-time { font-size:13px; }
+  }
+
+  /* ---------- 最後の商品紹介（メンバーシップLPの faq と同じ字体・色・カード） ---------- */
+  .close { --c:#67645E; --c2:#84827E; --c3:#ACAAA5; --cl:#D9D7D2; --cp:#F1F0ED; --s:0.29;
+           position:relative; margin-top:64px; padding-top:84px; text-align:center; color:var(--c);
+           font-family:'Zen Kaku Gothic New',sans-serif; font-weight:500; }
+  .close::before { content:""; position:absolute; left:50%; top:-30px; width:2px; height:66px; margin-left:-1px;
+                   background:radial-gradient(circle, var(--c3) 0.9px, transparent 1.2px) center top / 2px 6px repeat-y; }
+  .close::after { content:""; position:absolute; left:50%; top:44px; width:7px; height:7px; margin-left:-4.5px;
+                  border:1px solid var(--c2); background:var(--paper); transform:rotate(45deg); }
+  .close-en { font-family:'Rubik','M PLUS Rounded 1c',sans-serif; font-weight:800; font-size:40px; line-height:1; letter-spacing:-0.045em; color:var(--c); }
+  .close-pre { margin-top:18px; font-size:14px; line-height:2; letter-spacing:0.08em; color:var(--c2); }
+  .close-h { margin-top:18px; font-family:'M PLUS Rounded 1c','Rubik',sans-serif; font-weight:800; font-size:38px; line-height:1.3; letter-spacing:0.02em; color:var(--c); font-feature-settings:"palt"; white-space:nowrap; }
+  .close-pre2 { margin-top:2px; font-weight:700; font-size:15.5px; line-height:2; letter-spacing:0.06em; }
+
+  .close-card { margin-top:26px; }
+  .close-for { margin-top:10px; font-family:'M PLUS Rounded 1c',sans-serif; font-weight:800; font-size:17px; letter-spacing:0.04em; }
+  .close-for b { font-family:'Rubik',sans-serif; font-weight:800; font-size:28px; margin:0 3px; vertical-align:-2px; }
+  /* 2つの商品：白いカードを横並び、高さをそろえて中央揃え */
+  .close-items { display:flex; gap:12px; }
+  .close-item { flex:1; display:flex; flex-direction:column; align-items:center; }
+  .close-item img { display:block; width:100%; height:auto; border-radius:6px; box-shadow:0 1px 3px rgba(103,100,94,0.10), 0 10px 22px -8px rgba(103,100,94,0.30); }
+  .close-no { margin-top:14px; padding:3px 12px; border-radius:999px; background:var(--c); color:#fff;
+              font-family:'Rubik',sans-serif; font-weight:800; font-size:12px; line-height:1.4; letter-spacing:0.06em; }
+  .close-name { flex:1; display:flex; align-items:center; justify-content:center; margin-top:10px; min-height:3.2em;
+                font-family:'M PLUS Rounded 1c',sans-serif; font-weight:800; font-size:15px; line-height:1.6; letter-spacing:0.02em; }
+  /* 数字：白い箱を3つ */
+  .close-points { display:flex; gap:8px; margin-top:12px; list-style:none; }
+  .close-points li { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px 4px 14px; background:#fff; border-radius:10px; }
+  .close-points span { font-weight:700; font-size:13px; line-height:1.5; letter-spacing:0.06em; }
+  .close-points b { margin:2px 0; font-family:'Rubik',sans-serif; font-weight:800; font-size:40px; line-height:1.1; letter-spacing:-0.03em; }
+  .close-points b small { font-family:'M PLUS Rounded 1c',sans-serif; font-weight:800; font-size:17px; margin-left:2px; }
+  .close-with { display:table; margin:18px auto 0; padding:8px 20px; border:1.5px solid var(--c); border-radius:999px;
+                font-weight:700; font-size:13.5px; letter-spacing:0.08em; }
+
+  .close-btn { display:table; margin:30px auto 0; padding:13.5px 41.5px; border:0; background:#F6F6C2 url("assets/product/btn_paper.png") center / cover; border-radius:999px; box-shadow:0 4px 0 #DCDA9E, 0 10px 16px -4px rgba(103,100,94,0.22);
+               color:var(--c); text-decoration:none; font-weight:700; font-size:14.5px; letter-spacing:0.1em; }
+
+  .close-hand { margin-top:52px; font-size:14px; line-height:2; letter-spacing:0.08em; }
+  .close-sign { position:relative; width:calc(520px * var(--s)); height:calc(276px * var(--s)); margin:0 auto; left:72px; mix-blend-mode:multiply; }
+  .close-sgw { position:absolute; left:0; top:0; width:520px; height:276px; transform:scale(var(--s)); transform-origin:0 0; }
+  .close-sg { position:absolute; left:0; top:98px; width:530px; height:198px; overflow:hidden; filter:grayscale(1); }
+  .close-sg img { position:absolute; left:-261px; top:-162px; width:1014px; max-width:none; transform:rotate(-7deg); filter:contrast(1.3) brightness(1.06); }
+  .close-pen { position:absolute; left:397px; top:-38px; width:188px; height:212px; filter:drop-shadow(3px 7px 6px rgba(103,100,94,0.18)); }
+
+  @media (max-width:640px){
+    .close { margin-top:56px; padding-top:72px; --s:0.24; }
+    .close::before { top:-26px; height:58px; }
+    .close::after { top:36px; width:6px; height:6px; margin-left:-4px; }
+    .close-en { font-size:34px; }
+    .close-pre { font-size:12.5px; }
+    .close-h { margin-top:12px; font-size:28px; letter-spacing:0; }
+    .close-pre2 { font-size:14px; }
+    .close-card { margin:22px -6px 0; }
+    .close-for { font-size:15px; }
+    .close-for b { font-size:24px; }
+    .close-items { gap:6px; }
+
+    .close-no { margin-top:10px; font-size:10.5px; padding:2px 10px; }
+    .close-name { margin-top:8px; font-size:12px; letter-spacing:0; }
+    .close-points { gap:6px; margin-top:6px; }
+    .close-points li { padding:12px 2px 10px; border-radius:8px; }
+    .close-points span { font-size:11px; letter-spacing:0.02em; }
+    .close-points b { font-size:32px; }
+    .close-points b small { font-size:14px; }
+    .close-with { margin-top:14px; padding:7px 16px; font-size:12px; letter-spacing:0.04em; }
+    .close-btn { margin-top:26px; padding:13.5px 37.5px; font-size:14px; }
+    .close-hand { margin-top:44px; font-size:13px; }
+    .close-sign { left:52px; }
+  }
+
+  /* スマホだけの改行 */
+  br.m { display:none; }
+  br.d { display:inline; }
+  @media (max-width:640px){ br.m { display:inline; } br.d { display:none; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pencil" viewBox="0 0 48 48"><path d="M9.5 38.5c.8-3.4 1.9-6.6 3.2-9.7C19 22 25.6 15.4 32.4 9.1c2-1.6 4.2-1.2 5.8.4 1.7 1.8 1.9 3.9.2 5.8C32 22 25.6 28.5 19 34.9c-3 1.4-6.2 2.6-9.5 3.6z"/><path d="M29 12.3c2.2 1.9 4.4 4 6.4 6.3"/><path d="M12.9 28.9c2.4 1.5 4.6 3.4 6.2 5.8"/><path d="M26 40c3-1.2 5.4 1 8-.2 2.2-1 3.6-1.2 6-.4"/></symbol>
+  <symbol id="i-slr" viewBox="0 0 48 48"><path d="M8.200 16.600c3-.5 6.200-.4 9-.6 1.200-2 2.200-3.800 3.600-5.200 2.600-.3 5.200-.3 7.800 0 1.200 1.600 2.200 3.400 3.200 5.200 3 .1 5.800 0 8.600.5.900 5.800.800 12.600-.2 20.400-10.800 1-21.400 1-32 .1-1-7-1-13.800 0-20.400z"/><path d="M24 15.500c7.400-.3 12.800 5 12.800 11.800S31.400 39.200 24 39.200s-12.800-5.200-12.800-11.900S16.600 15.800 24 15.500z"/><path d="M24 20c4.600-.2 8 3.200 8 7.300s-3.400 7.400-8 7.400-8-3.300-8-7.400 3.400-7.100 8-7.300z"/><path d="M24 24.400c1.800 0 3.100 1.300 3.100 2.900s-1.300 3-3.100 3-3.100-1.400-3.100-3 1.300-2.900 3.100-2.900z"/><path d="M35.600 20.600h.4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 48 48"><path d="M24 7c1.2 7 4.6 12.6 13 15-8 2.2-11.6 7.6-13 16-1.6-8-5-13.6-13.2-15.8C19 20.4 22.6 15 24 7z"/><path d="M38 8c.4 2 1.4 3.4 3.6 4-2 .6-3.2 1.8-3.6 4-.5-2.2-1.6-3.4-3.6-4 2.2-.6 3.2-1.8 3.6-4z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 48 48"><path d="M8.2 16.6c3-.5 6.2-.4 9-.6 1.2-2 2.2-3.8 3.6-5.2 2.6-.3 5.2-.3 7.8 0 1.2 1.6 2.2 3.4 3.2 5.2 3 .1 5.8 0 8.6.5.9 5.8.8 12.6-.2 20.4-10.8 1-21.4 1-32 .1-1-7-1-13.8 0-20.4z"/><path d="M24 20.4c4.4-.2 7.6 2.8 7.6 6.8 0 4-3.2 6.8-7.4 6.8-4.2.1-7.8-2.8-7.8-6.8 0-4 3.2-6.9 7.6-6.8z"/><path d="M35.6 20.6h.4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 48 48"><path d="M24 40c-6-4.8-15.6-11-16-19-.3-6 7-11 12.4-6.6 1.6 1.2 2.8 2.6 3.6 4.2.8-1.6 2.2-3 4-4.2C33.4 10.6 40.4 15 40 21.4 39.6 29 30 35.6 24 40z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 48 48"><path d="M24 7.4c1.6 4.8 3.2 9.4 5 13.8 4.8.2 9.6.4 14 1-3.4 3-7 5.8-10.8 8.6 1.2 4.6 2.6 9 3.8 13.4-4-2.6-8-5.2-12.2-7.6-3.8 2.6-7.8 5.2-12 7.8 1.2-4.6 2.6-9.2 4-13.6-3.6-2.8-7.2-5.6-10.6-8.8 4.8-.6 9.4-.8 14-.9 1.8-4.6 3.4-9 5-13.7z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 48 48"><path d="M7.6 13c10.8-.9 22-1 32.8-.2.8 7.4.8 15 .2 22.4-11 .9-22 1-33 .2-.8-7.4-.8-15 0-22.4z"/><path d="M8 13.6c5 5 10.6 9.4 16 13.4 5.6-4 11-8.6 16-13.2"/></symbol>
+  <symbol id="i-talk" viewBox="0 0 48 48"><path d="M24 9c10-.2 18 5.6 18 13.4S34 36 24 36c-2 0-4-.2-5.8-.7-2.8 2-5.8 3.4-9.2 4 1.6-2.2 2.8-4.4 3.2-7C8.2 29.6 6 26.2 6 22.4 6 14.6 14 9.2 24 9z"/></symbol>
+  <symbol id="i-sprout" viewBox="0 0 48 48"><path d="M24 41c-.4-8-.4-15 .2-22"/><path d="M24 24C16 24 11 19 10 11c8 0 13 5 14 13z"/><path d="M24.2 19c.8-6 5-10.4 12.6-10.6C36 15.6 31.6 19 24.2 19z"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 48 48"><path d="M9 20c10-.7 20-.8 30 0 .6 6.8.6 13.4 0 20-10 .6-20 .6-30 0-.6-6.8-.6-13.2 0-20z"/><path d="M6.8 14c11.4-.8 23-.8 34.4 0 .3 2 .3 4 0 6-11.4.6-23 .6-34.4 0-.3-2-.3-4 0-6z"/><path d="M24 14.4c-.3 8.4-.2 17 .1 25.6"/><path d="M24 14C20 12 15.4 9.6 16.4 6.8c1-2.4 5.8-.6 7.6 7.2 1.8-7.8 6.8-9.6 7.8-7.2 1 2.8-3.8 5.2-7.8 7.2z"/></symbol>
+  <symbol id="i-flower" viewBox="0 0 48 48"><path d="M24 24c-5-4-6-12 0-14 6 2 5 10 0 14zm0 0c4-5 12-5.6 13.6.6-2.4 5.8-10 4-13.6-.6zm0 0c6 1.6 9 9 3.6 12.8-5.4-1-6.4-8.8-3.6-12.8zm0 0c.6 6.2-5.4 11.4-9.8 7.4-1.2-5.8 5-9.4 9.8-7.4zm0 0c-5 3.2-12.6 1.6-13.4-4.2 2.6-5.6 10-3.6 13.4 4.2z"/></symbol>
+</svg>
+<div class="wrap">
+
+  <h1>購入前の本音とQ&amp;A<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></h1>
+
+  <p class="lead qa-intro">いただいたご質問や購入前の本音、ご相談をもとにまとめました。</p>
+  <p class="lead">私自身もこの分野で人生が変わった一人として、もっと本音で伝える必要があり、このページを急遽作りました。ぜひご購入を迷われている方に見ていただきたいです。</p>
+
+  <ol class="qa-toc" id="toc">
+    <li><a href="#s1">興味はあるけど、まだ決めかねています🤣<span class="excl">！</span></a></li>
+    <li><a href="#s2">私にもできるのかな</a></li>
+    <li><a href="#s3">AI時代に対する本音</a></li>
+    <li><a href="#s4">楽しむことに遠慮してしまう</a></li>
+    <li><a href="#s5">見せること、表現すること</a></li>
+    <li><a href="#s6">言葉にしにくい気持ちへのお返事</a></li>
+    <li><a href="#s7">続け方と内容のこと</a></li>
+    <li><a href="#s8">この分野とお仕事のこと</a></li>
+    <li><a href="#s9">ほかとの違い</a></li>
+    <li><a href="#s10">購入前に知っておきたいこと</a></li>
+    <li><a href="#s11">購入を決める前に</a></li>
+  </ol>
+  <p class="toc-note">読みたいところを押すと、そこから読めます</p>
+
+  <h2 class="sect" id="s1">興味はあるけど、<br class="sp">まだ決めかねています🤣<span class="excl">！</span></h2>
+  <div class="intro-frame s1-frame">
+  <ul class="honne s1-honne"><li>「3日間で決められません」</li><li>「発表されてから、ものすごく悩んでいます」</li></ul>
+  <p class="qa-q s1-a"><b>A</b><span>わかります🤣<br class="sp">ご案内期間が短くてすみません💡</span></p>
+  <p class="lead s1-cont"><span>ただ補足すると・・3日間限定でご案内している特別動画付きの商品ページを何回かお送りしています。</span></p>
+  <p class="lead qa-feature s1-cont"><span>一番最後にお送りしたサイトから、サイトの日より3日間です。その期間内であれば特別価格でご購入いただけます。</span></p>
+  <div class="qa-msg">
+    <p class="sect qa-ans">今回のご案内について改めてお伝えします</p>
+    <p class="lead">私がお仕事につなげた経験を今回の商品にまとめています。</p>
+    <p class="lead dashed">実際のお仕事のやり取り</p>
+    <p class="lead dashed">どのAI画像や動画がお仕事につながるのか</p>
+    <p class="lead">それなりに失敗や経験を経てまとめたものですので、まとめている具体的な内容については以降、どの場所でご質問いただいてもお答えしないと決めています。</p>
+    <p class="lead">この商品の制作には、5ヶ月をかけました。普段はプロンプトをSNSで無料で公開している立場ですが、この分野については、AI時代に本気で学びたい方に絞ってお伝えしています。</p>
+    <p class="lead">これからChatGPTを使ったことがある方と同じぐらい、画像生成をしたことがある方が増えてきます。それに伴いAIで画像や動画を作れること、そして、今回ご案内しているその先の分野が注目され始めます。</p>
+    <p class="lead">この分野の魅力をこれから私自身も発信していきます。</p>
+    <p class="lead">商品については、どこかで見聞きした情報ではありません。その分野に先駆けてチャレンジし、これから始める方や、まずは知りたい方へ向けてまとめたものです。<br>ChatGPTに質問しても基本的に返ってきません。</p>
+  </div>
+  </div>
+  <div class="intro-frame">
+  <p class="sect qa-ans sect-band">購入前の本音とQ&amp;A</p>
+  <p class="lead qa-lead">いただいたご質問やご相談に、このページでは本音ベースで回答していきますね。</p>
+  <ul class="honne honne-talk">
+    <li>「やりたいことはまだ決まってないよ」</li>
+    <li>「AIはちょっと気になるんだけど」<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></li>
+  </ul>
+  </div>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>どんな方に向いている内容ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AI画像や動画に興味があり、その先の仕事の可能性も知ってみたい方に向けています。<br>今すぐ仕事にすると決めていなくても大丈夫です。ただ、画像をつくる方法だけをまとめた商品ではありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>まだ何をしたいのか決まっていません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から決めなくても大丈夫です。興味を持ったところから、この分野の魅力を知った上で、その先をゆっくり考えていただけたら嬉しいです。<br>そう思っていただくために制作した商品でもあります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>画像を作るのが楽しいという状態から始めてもいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。今回お伝えしたいのは、その先にお仕事として関わる分野もあるということ。<br>まずは知るところからでいいと思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>仕事にするかどうか、今決めなくてもいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。まだこの分野は始まったばかりだと思っているので、始める時はもちろん、仕事にしたいと思った時にも戻ってこれる商品になっています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>今の仕事を続けながらでもいいのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。今のお仕事を辞めることが前提ではありません。AI時代の選択肢の一つとして知っていただきたいです。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s2">私にもできるのかな</h2>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>センスに自信がありません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から自信がなくても大丈夫です。私自身も未経験から学んできました。まずは好きだなと思うものを大切にしていただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>絵が描けなくてもいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。AIを使った制作には、手で絵を描くこととは違う入り方もあります。まずは触れてみるところからで大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>デザインの勉強をしたことがありません。</span></p>
+      <p class="qa-a"><b>A</b><span>未経験の方にもこの分野を知っていただきたいと思ってまとめています。最初から専門的な経験がある必要はありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>年齢が気になっています。</span></p>
+      <p class="qa-a"><b>A</b><span>年齢だけで興味を諦める必要はないと思います。自分のペースで学んでいただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>今さら初心者になるのが、少し恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その気持ち、よくわかります。何歳から始めても、最初は誰でも初心者だと思っています。<br>新しいことに挑戦している自分を、恥ずかしがらなくて大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>AIと聞くだけで、少し身構えてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>難しそう、冷たそうと感じる方もいると思います。私にとっては、スマホで写真を撮る感覚の延長でした。<br>まずは身近なところから触れていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>なんだか難しそうです。</span></p>
+      <p class="qa-a"><b>A</b><span>最初はそう見えますよね。全部を一度に理解しなくても大丈夫です。わかるところから、ひとつずつ進めていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>アイデアがなかなか浮かびません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から何でも思いつく必要はありません。好きな色や雰囲気など、小さな好みから始めてもいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分の感性を信じられません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から信じられる方は少ないと思います。いいなと思ったものを集めるうちに、自分の好みが見えてきます。<br>小さな「いいな」を大切にしてみてください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰かに「向いている」と言ってもらえたら安心なのですが。</span></p>
+      <p class="qa-a"><b>A</b><span>向いているかどうかは、最初から誰かが決められるものではないと思います。やってみて楽しいと感じるかを、大切にしていただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>みゅうさんの作品はすごくて、私には遠く感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>そう感じてくださるのも、よくわかります。私も未経験から始めました。今の作品やブランドとのお仕事は、そのあとに少しずつ積み重ねてきたものです。<br>皆さんに同じ道を歩いてほしいわけではありません。まずは、ご自身が興味を持てるかどうかを大切にしていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰かの作品を見るのは好き。でも、自分がつくる側になる想像ができません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初はそう感じることもあると思います。まずは小さな好みから試してみて、つくる楽しさを知っていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>周りに同じことをしている人がいません。</span></p>
+      <p class="qa-a"><b>A</b><span>周りと同じことをしていなくても大丈夫です。自分が興味を持てるかを大切にしていただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>パソコンが苦手でも始められますか？</span></p>
+      <p class="qa-a"><b>A</b><span>無料から触れられる身近なツールもあります。ただし、実際の制作や仕事ではパソコンが必要になる作業もあるので、そこは正確にご案内したいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>一度聞いただけで理解できる自信がありません。</span></p>
+      <p class="qa-a"><b>A</b><span>何度も見返しながら、ご自身のペースで進めていただけたらと思います。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s3">AI時代に対する本音</h2>
+  <ul class="honne">
+    <li>「今からAIを勉強しても、もう遅い気がする」</li>
+    <li>「効率化の話は、正直ピンとこない」</li>
+    <li>「誰でもつくれるなら、私じゃなくてもいいよね」</li>
+    <li>「AIがどこまで進むのか、ちょっと怖い」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>今からAIを勉強しても、追いつける気がしません。</span></p>
+      <p class="qa-a"><b>A</b><span>私は2023年からChatGPTを使ってきました。男性的な効率化やお仕事術のようなAI活用は、正直、今から勉強しなくてもいいのかなと思っています。<br>AIがほとんどいろんなことをできるようになって、ようやく任せられるようになったからです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>AIでできることが多すぎて、ついていけません。</span></p>
+      <p class="qa-a"><b>A</b><span>AIでできることは、大きく分けると、効率化やお仕事術に使えたり、資料が作れたり、何でも聞けば答えてくれたりすることです。<br>最近だとMuseのようなAIエージェントが出てきて、身の回りのことを手伝ってくれるようにもなりました。<br>これらは私たちだけではなく、ほとんどの人が使える状態にあります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰でもAIで画像をつくれるなら、私がやる意味はありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>AIでできることの中に、画像や動画をつくることが増えました。昔はクオリティの高い画像は全然つくれませんでしたが、これからはほとんどの人がつくれるようになります。<br>AI時代はほとんどのことを調べられて、ChatGPTに聞くこともできます。だからこそ、実際に体験したことや原体験のようなものが残っていくと思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>AI画像をお仕事にするのは、ハードルが高く感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>お仕事にすると聞くと、ハードルを感じるかもしれません。でも、やることは基本的に変わりません。<br>テキストで伝えたり、本商品で紹介しているより詳しく伝える方法を使ったりして、作品をつくっていきます。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>顔や声を出さないと、お仕事にはならないのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>私がこれまでお仕事をしてきた中で、ご連絡をいただいた方の9割は女性でした。顔や声を出さなくても、作品を見た方からお仕事のご連絡が来ています。<br>ただ、これは私の一つの例です。これから何十通りもあると思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>興味はあっても、お仕事までの距離が遠く感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>その距離は、その先の世界を知ることだと思っています。知ったうえで、自分がその先どうしていきたいかを考えていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>周りに置いていかれそうで、焦ります。</span></p>
+      <p class="qa-a"><b>A</b><span>AIの変化は速いので、焦る気持ちもわかります。全部を追いかけなくても大丈夫です。<br>興味を持てる分野をひとつ知っておくだけでも、違うと思います。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s4">楽しむことに遠慮してしまう</h2>
+  <ul class="honne">
+    <li>「役に立たないことに時間を使うのは、ちょっと」</li>
+    <li>「家のことが終わってからじゃないと」</li>
+    <li>「楽しむだけなんて、ちょっと後ろめたい」</li>
+    <li>「楽しんでる自分を見られるのは照れる」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>役に立たないことに時間を使うのが、苦手です。</span></p>
+      <p class="qa-a"><b>A</b><span>すぐ役に立たなくても、楽しいと思える時間には意味があると思います。気持ちが軽くなることも、ひとつの「役に立つ」だと私は思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>家事や仕事を片づけてからでないと、楽しめません。</span></p>
+      <p class="qa-a"><b>A</b><span>真面目な方ほど、そう感じるのかもしれません。全部が終わるのを待たなくても大丈夫です。<br>10分だけ、自分の時間をつくってみるのもいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>上手にならないと、楽しんではいけない気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>上手になる前から、楽しんでいいと思います。楽しみながらつくっているうちに、少しずつ上達していくものです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>休むことに、罪悪感があります。</span></p>
+      <p class="qa-a"><b>A</b><span>いつも頑張っている方ほど、そう感じるのかもしれません。自分のための時間も、休むことと同じくらい大切だと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>夢中になると、時間を無駄にした気がしてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>夢中になれる時間は、それだけで素敵だと思います。無駄だったかどうかを、あとから決めなくてもいいんです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>好きなことが、いつの間にか義務になってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>真面目に向き合う方ほど、そうなりやすいのかもしれません。今回の内容は、全部をこなすためのものではありません。<br>楽しいと思える範囲で使っていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>楽しんでいる自分を、人に見せるのが照れくさいです。</span></p>
+      <p class="qa-a"><b>A</b><span>誰にも見せずに楽しむ時間があってもいいと思います。見せても見せなくても、どちらでも大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>好きなことに時間を使うのが、少し贅沢に感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>何に時間を使いたいかは、人それぞれだと思います。ご自身の生活を大切にしながら、無理のない形で考えていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>覚えることより楽しむことを大切にしたいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その気持ちも大切にしていただきたいです。今回の内容には仕事の話もありますが、最初からすべてを自分の課題にしなくてもいいと思います。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s5">見せること、表現すること</h2>
+  <ul class="honne">
+    <li>「私の作品なんて、誰も見たくないよね」</li>
+    <li>「批判されたら立ち直れない」</li>
+    <li>「真似って思われたらどうしよう」</li>
+    <li>「名前を出すのは、まだ無理」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分の作品を見せるのが恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から公開しなくても大丈夫です。まずは自分のためにつくって楽しむ時間があってもいいですよね。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分の世界観に、価値があるとは思えません。</span></p>
+      <p class="qa-a"><b>A</b><span>価値は、最初から決まっているものではないと思います。つくり続けるうちに、自分でも気づいていなかった良さが見えてくることもあります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>批判されたら、立ち直れない気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>怖いと感じるのは当然だと思います。最初から誰かに見せる必要はありません。ご自身が安心できる範囲で楽しんでいただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>人と違う表現を、避けてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>人と違う表現は、それだけで目に留まることもあります。いきなり大胆にしなくても大丈夫です。<br>少しずつ自分らしさを足していけたらいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰かの真似だと思われるのが怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>好きな作品から刺激を受けるのは、自然なことだと思います。そこに自分の好きな色や雰囲気を少しずつ混ぜていくと、自分らしい作品に近づいていきます。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分の名前を出すのが、恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>名前を出すかどうかは、ご自身で決めて大丈夫です。まずは自分のためにつくるところからでいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>完成していないものは、見せられません。</span></p>
+      <p class="qa-a"><b>A</b><span>完成するまで見せなくても大丈夫です。ご自身が納得できるまで、ゆっくりつくっていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰にも見せない作品に、意味があるのかなと思ってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>あると思います。自分が見て嬉しくなる作品は、それだけで十分素敵です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>気持ちを言葉で説明するのが苦手です。</span></p>
+      <p class="qa-a"><b>A</b><span>うまく言えなくても大丈夫です。好きな画像を参考にしたり、言葉を少しずつ足したりしながら形にしていけます。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s6">言葉にしにくい気持ちへのお返事</h2>
+  <ul class="honne">
+    <li>「どうせ私なんて」</li>
+    <li>「頑張ってること、誰も知らないし」</li>
+    <li>「自分のことは、いつも後回し」</li>
+    <li>「本当は、ちょっと認めてほしい」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>何か始めたいのに、いつも自分のことは後回しです。</span></p>
+      <p class="qa-a"><b>A</b><span>そういう時間が続くこともありますよね。今すぐ大きく生活を変える必要はありません。<br>自分が気になったことに、少しだけ時間を使ってみるのもいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分のためにお金を使うことに、まだ迷いがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>決して小さな金額ではないので、迷って当然だと思います。無理に背中を押すよりも、内容を知って納得して選んでいただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>何かを始めるなら、ちゃんと結果を出さなきゃと思ってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から結果まで決めなくてもいいと思います。まず知ること、試すことにも意味があると私は感じています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>周りの人は自分の道を見つけている気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>人それぞれ、興味を持つ時期も進み方も違いますよね。比べるよりも、今のご自身が何に惹かれるかを大切にしていただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>本当は何かに夢中になりたい気持ちがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>その気持ちを大切にしていただきたいです。今回の分野がそのひとつになるかどうか、まずは知っていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>今の私が、仕事の可能性を考えるなんて大げさでしょうか。</span></p>
+      <p class="qa-a"><b>A</b><span>そんなことはないと思います。仕事にするかどうかを決める前に、選択肢を知っておくこともできます。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>憧れる気持ちはあるけれど、自分のことになると急に自信がなくなります。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から自信がある方ばかりではないと思います。私も未経験から学んできたので、その距離を少しでも近く感じていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>昔は好きなことがたくさんあったのに、最近はわからなくなりました。</span></p>
+      <p class="qa-a"><b>A</b><span>無理に答えを見つけなくてもいいと思います。少し気になるものに触れながら、ゆっくり見つけていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>私には何もないと思ってしまうことがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>今までの経験や、好きだと感じることが、これからの興味につながることもあると思います。<br>何かを証明するために始めなくてもいいんです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>頑張っていることを、誰にも気づいてもらえません。</span></p>
+      <p class="qa-a"><b>A</b><span>毎日のことほど、見えにくいですよね。自分のためにつくった作品は、頑張ってきた自分を形にして残せるものでもあると思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分で自分を褒められません。</span></p>
+      <p class="qa-a"><b>A</b><span>褒めるのが苦手な方は、少なくないと思います。つくれた画像を「いいな」と思えたら、それだけで十分です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>褒められても、つい否定してしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>照れてしまいますよね。否定する前に、一度「ありがとう」と受け取ってみるのもいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰かと比べられるのが、つらいです。</span></p>
+      <p class="qa-a"><b>A</b><span>比べられると苦しくなりますよね。つくる作品には、比べて決まる正解はないと思っています。<br>ご自身のペースで楽しんでいただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰かに必要とされたい気持ちがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>とても自然な気持ちだと思います。お仕事は、誰かに必要とされる形のひとつでもあります。<br>今回の内容では、その入口で大切なことをお伝えしています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>仕事や家のこと以外の自分が、よくわかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>役割の中で頑張ってきた方ほど、そう感じるのかもしれません。好きな色や雰囲気を集めていくと、別の自分が少しずつ見えてくることもあります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>小さな楽しみが、最近減ってしまいました。</span></p>
+      <p class="qa-a"><b>A</b><span>忙しい毎日だと、そうなりますよね。AIで画像をつくる時間が、小さな楽しみのひとつになったら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>一人の時間を、どう使えばいいかわかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初は戸惑いますよね。好きなものを思い浮かべて画像にしてみるのも、楽しい時間の使い方だと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分のための、新しい習慣が欲しいです。</span></p>
+      <p class="qa-a"><b>A</b><span>素敵だと思います。毎日でなくても、週に一度自分のためにつくる時間があるだけで、気持ちが変わることもあります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>本気になって、失敗するのが怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>本気になるほど、怖くなりますよね。最初から本気にならなくても大丈夫です。楽しいと思える気持ちを、少しずつ育てていけたらいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>目標を口にすると、重くなってしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>口にしなくても大丈夫です。心の中で「やってみたい」と思っているだけで、十分だと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>挑戦しても、結局何も変わらない気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>そう思ってしまうときもありますよね。大きく変わらなくても、新しいことを知った分だけ、選べることは増えていくと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>今の自分を、否定したくありません。</span></p>
+      <p class="qa-a"><b>A</b><span>否定しなくていいと思います。今の自分のまま、新しいことを少し足してみるくらいの気持ちで大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>これまでの経験が、無駄になる気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>無駄にはならないと思います。これまでの経験や好きなものが、つくる作品ににじみ出ることもあります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>興味はあるのに、誰かに説明できる理由がありません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から立派な理由は必要ないと思います。ご自身が少し気になった、その気持ちから考えていただいていいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰にも言わずに、自分だけで始めたいです。</span></p>
+      <p class="qa-a"><b>A</b><span>もちろん、ご自身のペースで考えていただけます。最初から誰かに発表する必要はありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>本当は少し仕事にも興味があります。でも言うのが恥ずかしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その気持ちも大切にしていただきたいです。今すぐ誰かに話したり、目標を宣言したりする必要はありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分に期待して、またがっかりするのが怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>何か大きな結果を約束するものではありません。まずはどんな分野なのかを知り、できそうなことを一つずつ考えていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>『私でも始めていいのかな』という気持ちが、ずっとあります。</span></p>
+      <p class="qa-a"><b>A</b><span>もちろん、興味を持っていただくことに遠慮はいりません。ただ、購入は別のことです。<br>内容や条件を見て、今のご自身に合うと思えたときに選んでいただけたら嬉しいです。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s7">続け方と内容のこと</h2>
+  <ul class="honne">
+    <li>「どうせ続かない気がする」</li>
+    <li>「全部覚えられる自信ない」</li>
+    <li>「忙しくて、そんな時間ない」</li>
+    <li>「難しい言葉が出てきたら無理かも」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>以前にも何かを始めたのに、続かなかったことがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>そういう経験があると、また同じことになるかなと迷いますよね。私も、何かを始めるときに全部を一度に覚えなくてもいいと思っています。<br>今回は手元に置いて、必要なときに戻ってこられる内容にしています。少しずつで大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>始める前から、続かなかったときのことを考えてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から完璧に続けることを目標にしなくてもいいと思います。手元に置いて、また見たいときに戻れる形で使っていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>どうせ続かない気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>そう思ってしまう日もありますよね。毎日続けることより、また開きたくなったときに戻ってこられることを大切にしています。<br>間があいても、そこからまた始めて大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>内容が多くて、全部覚えられるか心配です。</span></p>
+      <p class="qa-a"><b>A</b><span>全部を一度に覚えていただくためのものではありません。手元に置いて、画像をつくりながら必要なところを見返していただけるように考えています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>毎日時間を取れなくてもいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。ご自身の生活に合わせて、無理なく進めていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>忙しくて、少しずつしか読めません。</span></p>
+      <p class="qa-a"><b>A</b><span>短い時間でもいいと思います。読む日も、画像をつくる日も、ご自身のペースで進めていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>途中でお休みしてもいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろん、ご自身のペースで進めていただけます。閲覧条件については購入前のご案内をご確認ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>どこから見たらいいかわかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>まずは全体を見て、興味のある内容から触れてみてください。推奨される順序がある部分は、商品内の案内に沿って進めてくださいね。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>全部を順番に学ばないといけませんか？</span></p>
+      <p class="qa-a"><b>A</b><span>最初からすべてを進める必要はありません。興味や目的に合わせて、少しずつ知っていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>2つとも、最初から全部学ばないといけませんか？</span></p>
+      <p class="qa-a"><b>A</b><span>いいえ。興味のあるところから、ご自身のペースで進めていただけたらと思います。必要になったときに見返せるようにまとめています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>難しい言葉が出てきたらどうしよう。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から全部知っている必要はありません。わからないところは調べたり見返したりしながら、少しずつ理解していただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>AI編集も最初から学ぶ必要がありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>AI編集の内容もセットですが、最初からすべてを学ぶ必要はありません。興味に合わせて見ていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>学びながら画像をつくってもいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。むしろ、手元に置いておきながら、実際に画像をつくる時間と一緒に楽しんでいただけたらと思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>買ったら全部やらないといけない気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>最初から全部を終わらせる必要はありません。手元に置いて、必要なときに見返しながら学んでいただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>買ったら『頑張らなきゃ』という気持ちになりそうです。</span></p>
+      <p class="qa-a"><b>A</b><span>そう思う方もいらっしゃると思います。全部を急いで進めるより、必要なときに見返せるものとして使っていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>買ったら、何か成果を出さないといけない気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>そう思うと、始めること自体が重くなってしまいますよね。今回の内容を読んだからといって、すぐに何かを証明する必要はありません。<br>自分のペースで学びながら、その先を考えていただけたらと思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>今まで買ったものを、最後まで使えなかったことがあります。</span></p>
+      <p class="qa-a"><b>A</b><span>だからこそ、今回の内容が本当にご自身に必要か、購入前に確認していただきたいです。<br>無理に決めなくて大丈夫です。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s8">この分野とお仕事のこと</h2>
+  <ul class="honne">
+    <li>「稼げないなら意味ないんじゃない？」</li>
+    <li>「ブランドのお仕事なんて、遠すぎる」</li>
+    <li>「プロ向けの話なんでしょ」</li>
+    <li>「画像がつくれたら、それでよくない？」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>AIクリエイティブって、どんな分野ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AIを使った画像や動画などの制作を、表現やお仕事につなげていく分野です。今回の内容では、その先の仕事で大切なこともまとめています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>画像をつくれることと、仕事にすることは違いますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。お仕事では、依頼内容を理解することや修正、納品までの進め方も大切になります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>画像をつくるのと、お仕事としてつくるのは違いますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。お仕事では、相手が求めるものを理解すること、修正に対応すること、納品まで責任を持つことも大切になります。<br>今回お伝えしたいのは、そうした部分も含めたお仕事のいろはです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>どんなお仕事があるのか、まだ想像できません。</span></p>
+      <p class="qa-a"><b>A</b><span>最初はそうだと思います。今回、ブランドや企業との制作をわかりやすい例として紹介していますが、それだけが仕事の形ではありません。<br>まずは画像や動画をつくった先に、どんなことが求められるのかを知っていただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>ブランドとのお仕事が中心なのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>ブランドや企業は、実際の仕事をわかりやすくお伝えするための例です。最初からそこを目指していただく必要はありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>ブランドのお仕事は、私には遠い世界に感じます。</span></p>
+      <p class="qa-a"><b>A</b><span>そうですよね。今回ブランドや企業とのお仕事を紹介しているのは、皆さんに同じ仕事を目指してほしいからではありません。<br>実際の制作では、画像をつくるだけでなく、依頼を理解したり、修正したり、納品したりすることも大切です。<br>私が経験したことを、身近なところから知っていただきたいと思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>画像がつくれたら、すぐ仕事になりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>つくれることがそのままお仕事の保証になるわけではありません。だからこそ、その先で大切になることを知っていただきたいと思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>お仕事につながらない画像のつくり方もあるのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>画像が素敵なだけでは、お仕事として求められるものと一致しない場合もあります。だからこそ、依頼内容や使われ方を考えることも大切です。<br>私が現場で感じてきたことを、今回の内容にまとめています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>稼げないなら、意味がないのでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>そんなことはないと思います。今回の内容にはお仕事の話も入っていますが、稼ぐことだけがゴールではありません。<br>知って、選べるようになることにも意味があると思っています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>プロを目指す人向けの内容に見えてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>お仕事の話が多いので、そう見えるかもしれません。でも、未経験の方にこそ知っていただきたくてまとめました。<br>プロを目指すかどうかは、そのあとで決めていただけます。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>好きなことを仕事にするのが、少し怖いです。</span></p>
+      <p class="qa-a"><b>A</b><span>好きなことだからこそ、大切にしたいですよね。仕事にするかどうかは、ご自身で選べます。<br>まずはどんな仕事なのかを知るところからで大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>仕事の話を聞くだけでも意味がありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。まずはどんな分野なのかを知って、その先を考えていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>実際のお仕事では何が大切ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>つくることに加えて、依頼を理解し、修正し、納品まで進めることも大切です。私が経験してきたことをもとにお伝えしています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>仕事にしていくうえで気をつけたいこともわかりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。画像をつくれたら終わり、ではないことも、実際の仕事を通して感じてきました。<br>仕事にしていく中で大切だと思ったことを、今回の内容にまとめています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>制作から修正、納品までのことも含まれていますか？</span></p>
+      <p class="qa-a"><b>A</b><span>私自身が制作から修正・編集、納品まで経験してきたことを土台にしています。ただし、お仕事ごとに必要な対応は異なるので、すべての案件で同じように進められるという意味ではありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>AI編集は動画編集の仕事だけを目指すものですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AI編集にもいろいろな使い方があります。セットの内容を確認して、ご自身の興味に合わせて学んでいただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>仕事にするかは学んでから考えてもいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。最初から答えを出す必要はありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>自分の感性を活かすって、どういうことですか？</span></p>
+      <p class="qa-a"><b>A</b><span>好きだと思う色や雰囲気、つくってみたい世界を大切にすることも、その入口だと思います。<br>仕事にするかどうかは、その先で考えていただけます。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>私の『好き』が、仕事につながるなんてまだ想像できません。</span></p>
+      <p class="qa-a"><b>A</b><span>すぐに想像できなくても自然だと思います。私自身も未経験からのスタートでした。まずは、好きなものをつくる楽しさと、その先の仕事で求められることの両方を知っていただきたいです。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s9">ほかとの違い</h2>
+  <ul class="honne">
+    <li>「ネットで調べれば、わかるんじゃない？」</li>
+    <li>「無料でもできそうだけど」</li>
+    <li>「2つって、何が違うの？」</li>
+    <li>「結局、何を買うの？」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>みゅうさんも未経験から始めたんですか？</span></p>
+      <p class="qa-a"><b>A</b><span>はい。私も未経験からのスタートでした。だからこそ、最初に知っておきたかったことを大切にしています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>ネットで調べれば情報は見つかりますよね？</span></p>
+      <p class="qa-a"><b>A</b><span>本当にそうだと思います。今回大切にしたのは、調べて集めた情報だけではなく、私自身の原体験や実際のお仕事の中で学んだことです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>無料でできることとの違いは何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>画像や動画を無料からつくれる時代になりました。今回の内容は、つくれた先にお仕事にしていく中で大切なことをまとめています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>2つの商品の違いは何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>「AIアーティスト＆クリエイターのはじめ方」は、AIクリエイティブを仕事にしていくための考え方や進め方を学ぶ内容です。<br>「AI編集のはじめ方」はAI編集について学ぶ内容です。今回のセットには両方が含まれています。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>何を買うのか、一言で知りたいです。</span></p>
+      <p class="qa-a"><b>A</b><span>AI画像や動画をつくれた先に、クリエイティブをお仕事にしていくうえで大切なことを、私の経験からまとめた買い切りの商品です。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s10">購入前に知っておきたいこと</h2>
+  <ul class="honne">
+    <li>「パソコン、持ってないんだけど」</li>
+    <li>「あとからお金がかかるのは嫌だな」</li>
+    <li>「買ったあと、ちゃんと見られるのかな」</li>
+    <li>「質問って、どこまでしていいの？」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>パソコンは必要ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>ChatGPTなどスマートフォンから使えるツールもあります。ただし、取り組む制作や使うツールによってはパソコンが必要な場合もあります。<br>すべてスマートフォンだけで完結するとお約束するものではありません。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>スマートフォンだけで全部できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>できることもありますが、すべてではありません。必要な環境は取り組む内容によって変わります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>スマートフォンやタブレットでも見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>内容を見ることと、実際に制作することでは必要な環境が違います。閲覧できる端末や、各制作に必要な環境は、購入前に確認できるようにご案内します。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>AIツールに別料金はかかりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>ChatGPTやMuseなど、無料から始められるものもあります。一部の機能や利用量によっては、外部ツールの有料プランが必要になる場合があります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>商品に月額料金はかかりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>今回の商品は買い切りで、商品自体に追加の月額料金はありません。外部の有料ツールの費用は別になります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>何度でも見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>一度ご購入いただければ繰り返しご覧いただける形です。閲覧できる期間や提供条件については、正式な利用条件をご確認ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>一度購入したら、いつまで見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>繰り返しご覧いただける内容です。ただし、無期限の提供を保証するかどうかは正式な利用条件によります。<br>閲覧期間やサービスの提供条件は、購入前にご確認ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>お便り便って何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>商品についての質問や、内容の更新に関するご案内のために用意しているものです。対応方法や範囲はご案内に沿ってご利用ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>質問はどこまでできますか？</span></p>
+      <p class="qa-a"><b>A</b><span>商品の内容についての質問を想定しています。個別の制作代行やお仕事の紹介をお約束するものではありません。<br>詳しい範囲は正式な案内で明確にします。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>お便り便では、どんな質問ができますか？</span></p>
+      <p class="qa-a"><b>A</b><span>今回の内容についてご質問を受け付けるために、お便り便をご用意しています。個別添削や仕事の相談などが含まれるか、回答方法や対応範囲は別途明確にご案内します。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>内容は更新されますか？</span></p>
+      <p class="qa-a"><b>A</b><span>更新に関するご案内は、お便り便でお知らせする予定です。更新の頻度や内容を保証するものではないため、現時点で含まれる内容を基準にご検討ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>内容が更新された場合はどうなりますか？</span></p>
+      <p class="qa-a"><b>A</b><span>商品の更新については、お便り便でご案内する予定です。更新の対象範囲や追加費用の有無は、実際の提供条件に合わせて明確にお伝えします。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>購入後はどうやって見られますか？</span></p>
+      <p class="qa-a"><b>A</b><span>購入後の案内に沿ってご覧いただく形です。具体的な受け取り方法やログイン手順は、購入ページの正式な案内をご確認ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>購入後は、まず何をすればいいですか？</span></p>
+      <p class="qa-a"><b>A</b><span>購入後の案内に沿って内容をご覧いただき、まずは興味のあるところから確認していただけたらと思います。<br>実際の閲覧手順は、購入後のご案内をご確認ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>仕事につながる保証はありますか？</span></p>
+      <p class="qa-a"><b>A</b><span>お仕事や収入を保証するものではありません。実際の経験をもとに、仕事にしていくために大切なことを学んでいただく商品です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>購入後のキャンセルや返金はできますか？</span></p>
+      <p class="qa-a"><b>A</b><span>大切なことなので、お申し込み前に必ず確認していただきたいです。キャンセルや返金は、販売ページに記載された利用規約に沿って取り扱います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>支払い方法と購入後の案内はどこで確認できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>利用できるお支払い方法は購入フォームで確認できます。購入後の案内を受け取れるよう、入力するメールアドレスと受信設定もご確認ください。</span></p>
+    </div>
+
+  </div>
+
+  <h2 class="sect" id="s11">購入を決める前に</h2>
+  <ul class="honne">
+    <li>「本当に私に必要なのかな」</li>
+    <li>「買って後悔したくない」</li>
+    <li>「他にもっと良いものがあるかも」</li>
+    <li>「もう少し様子を見たい」</li>
+  </ul>
+  <div class="qa">
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>今の自分にはまだ早いでしょうか？</span></p>
+      <p class="qa-a"><b>A</b><span>未経験の方にも知っていただきたい内容です。ただ、今必要だと感じるかどうかは、ご自身の気持ちを大切にしていただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>他にもっと良い方法がある気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>いろいろな学び方があるので、比べたくなるのは自然だと思います。今回の内容は、AI画像や動画をつくれた先のことをまとめたものです。<br>その部分を知りたいと思えるかで、選んでいただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>購入前に内容を詳しく確認できますか？</span></p>
+      <p class="qa-a"><b>A</b><span>内容や目次、提供条件をご確認いただいたうえで判断していただきたいと思っています。<br>公開されている案内を見て、気になる点はご質問ください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>もし自分に合わなかったらどうしよう。</span></p>
+      <p class="qa-a"><b>A</b><span>そう思うのも自然なことだと思います。どんなことを学べるか、何が含まれないかまで確認してから決めていただきたいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>一度選んだら、もう戻れない気がします。</span></p>
+      <p class="qa-a"><b>A</b><span>そんなことはないと思います。学んでみて違うと思ったら、別の道を選んでもいいんです。<br>今回の内容も、選択肢のひとつとして考えていただけたら嬉しいです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>始めるタイミングがわかりません。</span></p>
+      <p class="qa-a"><b>A</b><span>焦って決める必要はありません。ただ、完璧なタイミングを待っていると、なかなか来ないこともあります。<br>気になっている今の気持ちを、大切にしていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>決めるのを、つい先延ばしにしてしまいます。</span></p>
+      <p class="qa-a"><b>A</b><span>大事なことほど、迷ってしまいますよね。急がなくて大丈夫です。内容を確認して、納得できたときに決めていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>誰かに背中を押してほしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>その気持ち、よくわかります。でも、無理に背中を押すことはしたくないと思っています。<br>ご自身が「やってみたい」と思えたときが、いちばんいいタイミングです。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>失敗してもいいよ、と言ってほしいです。</span></p>
+      <p class="qa-a"><b>A</b><span>失敗しても大丈夫です。うまくいかなかったことも、次につくるときの材料になります。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>始める前に、正解を知っておきたいです。</span></p>
+      <p class="qa-a"><b>A</b><span>正解がわかってから始めたい気持ち、わかります。ただ、つくる分野には一つの正解があるわけではありません。<br>試しながら、自分なりの答えを見つけていけたらいいと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>購入を見送るのもありですか？</span></p>
+      <p class="qa-a"><b>A</b><span>もちろんです。今のご自身に必要だと思えるかを大切にしてください。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>私が今すぐ買うべきか、まだ決められません。</span></p>
+      <p class="qa-a"><b>A</b><span>迷っているときは、内容や条件を確認してから考えていただきたいです。興味があることと、今購入することは別の話なので、ご自身の納得を大切にしていただけたらと思います。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>質問する前に、基本的なことを聞いてもいいのか迷います。</span></p>
+      <p class="qa-a"><b>A</b><span>気になることがあれば、購入前に確認していただきたいです。わからないまま決めなくても大丈夫です。</span></p>
+    </div>
+
+    <div class="qa-item">
+      <p class="qa-q"><b>Q</b><span>最後に、一番知ってほしいことは何ですか？</span></p>
+      <p class="qa-a"><b>A</b><span>AIでできることが増えている今、私が未経験から学び、仕事にしてきたこの分野を、自分の可能性のひとつとして知っていただきたいです。<br>最初から何かを決めなくても、ゆっくり考えていただけたら嬉しいです。</span></p>
+    </div>
+
+  </div>
+
+
+  <section class="close">
+    <p class="close-pre">ここまで見てくださった方へ</p>
+    <p class="close-pre2">未経験から学んだことをまとめました</p>
+    <h2 class="close-h">「知って、はじめる」</h2>
+    <p class="close-for">ための<b>2</b>つのコンテンツ</p>
+
+    <div class="close-card">
+      <div class="close-items">
+        <div class="close-item">
+          <img decoding="async" width="1280" height="720" src="assets/product/cover.png" alt="AIアーティスト＆クリエイターのはじめ方">
+        </div>
+        <div class="close-item">
+          <img decoding="async" width="1280" height="720" src="assets/product/cover2.png" alt="AI編集のはじめ方">
+        </div>
+      </div>
+    </div>
+
+    <a class="close-btn" href="https://sub.start-myu.com/p/U82F7naBzIy2">詳細を見る</a>
+
+    <p class="close-hand">あなたの挑戦を心から応援しています</p>
+    <div class="close-sign" aria-hidden="true"><div class="close-sgw">
+      <div class="close-sg"><img src="assets/product/sign.png" alt=""></div>
+      <svg class="close-pen" viewBox="-110 -250 240 270" fill="none" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(30)"><path d="M0 0L-12 -44Q-13 -54 -9 -60H9Q13 -54 12 -44Z" fill="#fff" stroke="#67645E" stroke-width="3"/><path d="M0 0V-34" stroke="#67645E" stroke-width="2"/><circle cx="0" cy="-36" r="3" fill="#67645E"/><rect x="-13" y="-76" width="26" height="16" rx="3" fill="#fff" stroke="#67645E" stroke-width="3"/><path d="M-17 -76V-214C-17 -232 -8 -236 0 -236C8 -236 17 -232 17 -214V-76Z" fill="#67645E"/><path d="M-17 -96H17" stroke="#ACAAA5" stroke-width="3"/></g></svg>
+    </div></div>
+  </section>
+
+</div>
+<a class="to-toc" href="#toc">もくじ</a>
+<script src="assets/js/budoux-ja.min.js"></script>
+<script>
+if (!CSS.supports('word-break', 'auto-phrase')) {
+  document.querySelectorAll('.wrap p').forEach(function (p) {
+    var el = document.createElement('budoux-ja');
+    while (p.firstChild) el.appendChild(p.firstChild);
+    p.appendChild(el);
+  });
+}
+</script>
+</body>
+</html>
