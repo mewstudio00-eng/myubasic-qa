@@ -84,8 +84,10 @@
   /* ---------- 01の小見出しと案内 ---------- */
   p.sect { margin:40px 0 16px; font-weight:700; font-size:17.5px; line-height:1.75; letter-spacing:0.05em; color:var(--ink); }
   p.sect::before { content:""; display:block; width:22px; height:1px; margin-bottom:12px; background:var(--ink); }
-  .intro-frame { margin:60px 0 64px; padding:32px 26px 30px; border:1px solid var(--faint); border-radius:4px; }
-  .intro-frame .honne { margin-bottom:0; }
+  .intro-frame { margin:60px 0 36px; padding:32px 26px 30px; border:1px solid var(--faint); border-radius:4px; }
+  .intro-frame .qa-lead { margin-bottom:0; }
+  /* 枠の外の吹き出しは下の質問に寄せる */
+  .honne-talk { margin-bottom:10px; }
   .intro-frame.s1-frame { margin-top:0; margin-bottom:20px; }
   .intro-frame.s1-frame + .intro-frame { margin-top:20px; }
   .intro-frame .s1-honne { margin-bottom:30px; }
@@ -94,8 +96,10 @@
   .qa-bold { font-weight:700; color:var(--ink); padding:16px 20px; background:var(--fill); border-radius:12px; }
   .qa-msg { position:relative; margin:48px 0 0; padding:28px 24px 64px; background:var(--fill); border-radius:16px; }
   /* 右下に手書き風のペン */
-  .qa-msg::after { content:""; position:absolute; right:18px; bottom:14px; width:58px; height:51px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2056%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22w%22%20x%3D%22-10%25%22%20y%3D%22-10%25%22%20width%3D%22120%25%22%20height%3D%22120%25%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.05%22%20numOctaves%3D%222%22%20seed%3D%224%22/%3E%3CfeDisplacementMap%20in%3D%22SourceGraphic%22%20scale%3D%221.8%22/%3E%3C/filter%3E%3C/defs%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%238C8C8A%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20filter%3D%22url%28%23w%29%22%3E%3Cg%20transform%3D%22translate%2826%2038%29%20rotate%28-42%29%22%3E%3Cpath%20d%3D%22M9%20-4.5%20L35%20-4.5%20Q40%20-4.5%2040%200%20Q40%204.5%2035%204.5%20L9%204.5%20Z%22/%3E%3Cpath%20d%3D%22M15%20-4.5%20L15%204.5%20M18%20-4.5%20L18%204.5%22/%3E%3Cpath%20d%3D%22M9%20-4.5%20L0%200%20L9%204.5%22/%3E%3Cpath%20d%3D%22M0%200%20L5%200%22/%3E%3Cpath%20d%3D%22M26%20-4.5%20L33%20-7.5%20L34%20-4.5%22/%3E%3C/g%3E%3Cpath%20d%3D%22M25%2039%20C21%2044%2016%2041%2012%2046%20C9%2050%205%2047%203%2050%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
+  .qa-msg::after { content:""; position:absolute; right:20px; bottom:12px; width:34px; height:46px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-60%20-150%20120%20160%22%3E%3Cg%20transform%3D%22rotate%2832%29%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M0%200L-12%20-44Q-13%20-54%20-9%20-60H9Q13%20-54%2012%20-44Z%22%20fill%3D%22%23fff%22%20stroke%3D%22%239A9A97%22%20stroke-width%3D%223%22/%3E%3Cpath%20d%3D%22M0%200V-34%22%20stroke%3D%22%239A9A97%22%20stroke-width%3D%222%22/%3E%3Ccircle%20cx%3D%220%22%20cy%3D%22-36%22%20r%3D%223%22%20fill%3D%22%239A9A97%22/%3E%3Crect%20x%3D%22-13%22%20y%3D%22-76%22%20width%3D%2226%22%20height%3D%2216%22%20rx%3D%223%22%20fill%3D%22%23fff%22%20stroke%3D%22%239A9A97%22%20stroke-width%3D%223%22/%3E%3Cpath%20d%3D%22M-17%20-76V-130C-17%20-142%20-8%20-146%200%20-146C8%20-146%2017%20-142%2017%20-130V-76Z%22%20fill%3D%22%239A9A97%22/%3E%3Cpath%20d%3D%22M-17%20-92H17%22%20stroke%3D%22%23D4D4D1%22%20stroke-width%3D%223%22/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; }
   .qa-msg p.sect:first-child { margin-top:0; }
+  .qa-msg p.sect { font-size:16px; }
+  .qa-msg .lead { font-size:14.5px; }
   .lead.dashed { position:relative; padding-left:1.6em; }
   .lead.dashed::before { content:""; position:absolute; left:0.1em; top:0.68em; width:0.72em; height:0.72em; border:1px solid var(--ink); border-radius:2px; background:var(--paper); }
   .lead + .lead.dashed { margin-top:1.1em; }
@@ -174,8 +178,10 @@
     p.sect { font-size:16.5px; }
     .intro-frame { margin-left:-6px; margin-right:-6px; padding:26px 18px 24px; }
     .intro-frame .qa-msg { margin-left:0; margin-right:0; padding-left:18px; padding-right:18px; }
+    .qa-msg p.sect { font-size:15px; }
+    .qa-msg .lead { font-size:13.5px; }
     .qa-msg { margin-left:-6px; margin-right:-6px; padding:24px 20px 58px; }
-    .qa-msg::after { right:14px; bottom:12px; width:50px; height:44px; }
+    .qa-msg::after { right:16px; bottom:10px; width:30px; height:40px; }
     .honne li { font-size:14.5px; padding:9px 16px; }
     .cta { margin-top:80px; padding:56px var(--gut); }
     .cta-h { font-size:19px; }
@@ -277,10 +283,10 @@
   <h1>購入前の<wbr>本音と<wbr>Q&amp;A<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></h1>
 
   <p class="lead qa-intro">いただいた<wbr>ご質問や<wbr>購入前の<wbr>本音、<wbr>ご相談を<wbr>もとに<wbr>まとめました。</p>
-  <p class="lead">私自身も<wbr>この<wbr>分野で<wbr>人生が<wbr>変わった<wbr>一人と<wbr>して、<wbr>もっと<wbr>本音で<wbr>伝える<wbr>必要が<wbr>あり、<wbr>この<wbr>ページを<wbr>急遽作りました。<wbr>ぜひ<wbr>ご購入を<wbr>迷われている<wbr>方に<wbr>見ていただきたいです。</p>
+  <p class="lead">私自身も<wbr>この<wbr>分野で<wbr>人生が<wbr>変わった<wbr>一人と<wbr>して、<wbr>もっと<wbr>本音で<wbr>伝える<wbr>必要が<wbr>あり、<wbr>この<wbr>ページを<wbr>急遽作りました。<br>ぜひ<wbr>ご購入を<wbr>迷われている<wbr>方に<wbr>見ていただきたいです。</p>
 
   <ol class="qa-toc" id="toc">
-    <li><a href="#s1">興味は<wbr>あるけど、<wbr>まだ<wbr>決めかねています🤣<span class="excl">！</span></a></li>
+    <li><a href="#s1">興味は<wbr>あるけど、<br>まだ<wbr>決めかねています🤣<span class="excl">！</span></a></li>
     <li><a href="#s2">私にも<wbr>できるのかな</a></li>
     <li><a href="#s3">AI時代に<wbr>対する<wbr>本音</a></li>
     <li><a href="#s4">楽しむことに<wbr>遠慮してしまう</a></li>
@@ -294,11 +300,11 @@
   </ol>
   <p class="toc-note">読みたい<wbr>ところを<wbr>押すと、<wbr>そこから<wbr>読めます</p>
 
-  <h2 class="sect" id="s1">興味は<wbr>あるけど、<br class="sp">まだ<wbr>決めかねています🤣<span class="excl">！</span></h2>
+  <h2 class="sect" id="s1">興味は<wbr>あるけど、<br>まだ<wbr>決めかねています🤣<span class="excl">！</span></h2>
   <div class="intro-frame s1-frame">
   <ul class="honne s1-honne"><li>「3日間で<wbr>決められません」</li><li>「発表されてから、<wbr>もの<wbr>すごく<wbr>悩んでいます」</li></ul>
-  <p class="qa-q s1-a"><b>A</b><span>わかります🤣<br class="sp">ご案内期間が<wbr>短くて<wbr>すみません💡</span></p>
-  <p class="lead s1-cont"><span>ただ補足すると・・<wbr>3日間限定で<wbr>ご案内している<wbr>特別動画付きの<wbr>商品ページを<wbr>何回か<wbr>お送りしています。</span></p>
+  <p class="qa-q s1-a"><b>A</b><span>わかります🤣<br>ご案内期間が<wbr>短くて<wbr>すみません💡</span></p>
+  <p class="lead s1-cont"><span>ただ補足すると・・<br>3日間限定で<wbr>ご案内している<wbr>特別動画付きの<wbr>商品ページを<wbr>何回か<wbr>お送りしています。</span></p>
   <p class="lead qa-feature s1-cont"><span>一番<wbr>最後に<wbr>お送りした<wbr>サイトから、<wbr>サイトの<wbr>日より<wbr>3日間です。<wbr>その<wbr>期間内で<wbr>あれば<wbr>特別価格で<wbr>ご購入いただけます。</span></p>
   <div class="qa-msg">
     <p class="sect qa-ans">今回の<wbr>ご案内に<wbr>ついて<wbr>改めて<wbr>お伝えします</p>
@@ -315,11 +321,11 @@
   <div class="intro-frame">
   <p class="sect qa-ans sect-band">購入前の<wbr>本音と<wbr>Q&amp;A</p>
   <p class="lead qa-lead">いただいた<wbr>ご質問や<wbr>ご相談に、<wbr>この<wbr>ページでは<wbr>本音ベースで<wbr>回答していきますね。</p>
+  </div>
   <ul class="honne honne-talk">
     <li>「やりたい<wbr>ことは<wbr>まだ<wbr>決まってないよ」</li>
     <li>「AIは<wbr>ちょっと<wbr>気に<wbr>なるんだけど」<svg class="ic" aria-hidden="true"><use href="#i-talk"/></svg></li>
   </ul>
-  </div>
   <div class="qa">
 
     <div class="qa-item">
